@@ -1,0 +1,27 @@
+.socials {
+    display: flex;
+    gap: 2rem;
+    
+    a {
+        display: flex;
+        align-items: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        cursor: pointer;
+
+        &:hover {
+            svg path {
+                fill: $color-active-secondary;
+            }
+        }
+
+        svg {
+            width: 100%;
+            height: auto;
+
+            path {
+                transition: all .1s linear;
+            }
+        }
+    }
+}

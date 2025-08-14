@@ -1,0 +1,42 @@
+.menu {
+    z-index: 1;
+
+    ul {
+        list-style: none;
+        height: 100%;
+        padding-left: 0;
+
+        &, .menu__li-group {
+            display: flex;
+            gap: 8rem;
+        }
+
+        &:has(>.menu__li-group) {
+            justify-content: space-between;
+            gap: 0;
+        }
+
+        li {
+            height: 100%;
+
+            a {
+                font-family: $font-main;
+                font-size: 1.8rem;
+                color: #fff;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                height: 100%;
+                padding-top: 0.3rem;
+
+                &:hover, &.highlight:hover {
+                    color: $color-active;
+                }
+
+                &.highlight {
+                    color: $color-active-secondary;
+                }
+            }
+        }
+    }
+}

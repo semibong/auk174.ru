@@ -1,0 +1,248 @@
+.consultation {
+    padding: 2.5rem 0 5rem;
+    margin-bottom: 3rem;
+
+    @media #{$lg} {
+        padding: 9.3rem 0 3.8rem;
+        margin-bottom: 0;
+    }
+
+    &__content {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        background: linear-gradient(0deg, #141822, #1D2835);
+        box-sizing: border-box;
+        padding: 3rem;
+        border-radius: 2rem;
+
+        @media #{$lg} {
+            flex-direction: column;
+            gap: 1.7rem;
+            width: 100%;
+            padding: 2.7rem 1.4rem 4.2rem;
+            border-radius: 0;
+            margin: 0;
+        }
+        
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url(../images/pattern.png) repeat top left;
+            border-radius: 2rem;
+            pointer-events: none;
+            top: 0;
+            left: 0;
+
+            @media #{$lg} {
+                background: url(../images/pattern-mob.png) repeat top left;
+                border-radius: 0;
+            }
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 52.8rem;
+            height: 39.7rem;
+            background: url(../images/consultation-img-1.png) no-repeat center / contain;
+            pointer-events: none;
+            transform: translateX(-50%);
+            left: 50%;
+            bottom: 0;
+
+            @media #{$lg} {
+                width: 25.6rem;
+                height: 32rem;
+                background: url(../images/consultation-img-1-mob.png) no-repeat center / contain;
+                transform: none;
+                top: -9.3rem;
+                left: auto;
+                right: 0;
+                bottom: auto;
+            }
+        }
+    }
+
+    &__form {
+        z-index: 1;
+
+        h2 {
+            font-weight: 400;
+            font-size: 6rem;
+            line-height: 6rem;
+            background-image: linear-gradient(78deg, $color-active, #f00);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2rem;
+            
+            @media #{$lg} {
+                font-size: 3rem;
+                line-height: 2.5rem;
+                margin-left: 1.6rem;
+                margin-bottom: 3rem;
+            }
+
+            @media #{$sm} {
+                width: min-content;
+            }
+
+            span {
+                font-size: 5rem;
+                line-height: 5.2rem;
+                background-image: linear-gradient(0deg, #fff);
+                background-clip: text;
+                -webkit-background-clip: text;
+                margin-top: -1rem;
+
+                @media #{$lg} {
+                    font-size: 4rem;
+                    line-height: 4.2rem;
+                    margin-top: 0.2rem;
+                }
+
+                @media #{$sm} {
+                    width: max-content;
+                }
+            }
+        }
+
+        &__inputs {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 3rem;
+
+            @media #{$lg} {
+                gap: 2rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        .checkbox {
+            max-width: 60rem;
+        }
+    }
+
+    &__socials {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        z-index: 1;
+
+        @media #{$lg} {
+            align-items: start;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 51.3rem;
+            height: 35.6rem;
+            background: url(../images/consultation-img-2.png) no-repeat center / contain;
+            top: 3.7rem;
+            left: -16.2rem;
+
+            @media #{$lg} {
+                width: 37.5rem;
+                height: 40rem;
+                background: url(../images/consultation-img-2-mob.png) no-repeat center / contain;
+                transform: translateX(-50%);
+                top: auto;
+                left: 50%;
+                bottom: -8rem;
+            }
+        }
+
+        h3 {
+            font-size: 5rem;
+            line-height: 5rem;
+            text-align: right;
+            background-image: linear-gradient(0deg, #fff);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1.6rem;
+
+            @media #{$lg} {
+                font-size: 3rem;
+                line-height: 4rem;
+                text-align: left;
+                margin-left: 1.6rem;
+                margin-bottom: 0.8rem;
+            }
+
+            span {
+                font-size: 6rem;
+                line-height: 5.5rem;
+                background-image: linear-gradient(78deg, $color-active, #f00);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin-top: -0.5rem;
+
+                @media #{$lg} {
+                    font-size: 4rem;
+                    line-height: 4rem;
+                    margin-top: 0;
+                }
+            }
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            @media #{$lg} {
+                width: 100%;
+            }
+        }
+
+        &__item {
+            display: flex;
+            align-items: center;
+            gap: 1.3rem;
+            width: 23.3rem;
+            height: 5rem;
+            background-color: rgba(#000, 0.5);
+            backdrop-filter: blur(10px);
+            box-sizing: border-box;
+            padding-left: 1rem;
+            border-radius: 5rem;
+
+            @media #{$lg} {
+                width: 100%;
+            }
+
+            &:hover {
+                span {
+                    color: $color-active;
+                }
+            }
+
+            img {
+                width: 3rem;
+                height: 3rem;
+                object-fit: contain;
+                object-position: center;
+            }
+
+            span {
+                font-family: $font-second;
+                font-weight: 500;
+                font-size: 1.6rem;
+                color: #8D9CA8;
+                transition: all .1s linear;
+            }
+        }
+    }
+}

@@ -1,0 +1,92 @@
+.licenses {
+    padding: 10.2rem 0 7.4rem;
+    margin-bottom: 8rem;
+
+    @media #{$lg} {
+        padding: 7.4rem 0 0;
+        margin-bottom: 5rem;
+    }
+
+    &__wrapper {
+        position: relative;
+        background: url(../images/licenses-bg.png) no-repeat right bottom / cover;
+        box-sizing: border-box;
+        padding: 3rem;
+        border-radius: 2rem;
+
+        @media #{$lg} {
+            padding: 1.5rem 1.4rem 3rem;
+            background: url(../images/licenses-bg-mob.png) no-repeat right bottom / cover;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 49.4rem;
+            height: 51rem;
+            background: url(../images/licenses-img.png) no-repeat center / contain;
+            top: -10.2rem;
+            left: -1.5rem;
+
+            @media #{$lg} {
+                width: 17rem;
+                height: 16.9rem;
+                top: -7.4rem;
+                left: auto;
+                right: 0;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        margin-left: 47.3rem;
+
+        @media #{$lg} {
+            margin-left: 0;
+        }
+
+        h2 {
+            font-weight: 400;
+            font-size: 5rem;
+            line-height: 100%;
+            background-image: linear-gradient(78deg, $color-active, #f00);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.7rem;
+
+            @media #{$lg} {
+                font-size: 3rem;
+                max-width: 26.2rem;
+                margin-bottom: 2rem;
+            }
+        }
+
+        p {
+            font-family: $font-second;
+            font-weight: 500;
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+            color: $color-primary;
+            max-width: 75.5rem;
+            margin-bottom: 4.4rem;
+
+            @media #{$lg} {
+                font-size: 1.4rem;
+                line-height: 1.6rem;
+                max-width: none;
+                margin-bottom: 2rem;
+            }
+        }
+
+        .btn {
+            color: #fff;
+
+            &:hover {
+                color: $color-active;
+            }
+        }
+    }
+}

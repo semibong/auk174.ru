@@ -1,0 +1,300 @@
+.footer {
+    &__top {
+        position: relative;
+        height: 6.5rem;
+        background: linear-gradient(0deg, #141822, #1D2835) left padding-box,
+        linear-gradient(90deg, #181F2A 0%, #fff, 34%, #fff 68%, #181F2A 100%) border-box;
+        box-sizing: border-box;
+        border: 1px transparent solid;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url(../images/pattern.png) repeat top left;
+            pointer-events: none;
+            top: 0;
+            left: 0;
+
+            @media #{$lg} {
+                background: url(../images/pattern-mob.png) repeat top left;
+            }
+        }
+
+        &__content {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+
+            .menu {
+                @media #{$lg} {
+                    display: none;
+                }
+
+                ul {
+                    gap: 9rem;
+                }
+            }
+        }
+
+        .socials {
+            display: none;
+
+            @media #{$lg} {
+                display: flex;
+                gap: 3rem;
+            }
+        }
+
+        &__block {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+
+            .email {
+                font-size: 1.4rem;
+                color: #B2A481;
+                display: none;
+
+                @media #{$lg} {
+                    display: inline;
+                }
+
+                &:hover {
+                    color: $color-active-secondary;
+                }
+            }
+        }
+    }
+
+    &__content {
+        position: relative;
+        background: url(../images/footer-bg.jpg) no-repeat center / cover;
+        padding: 2rem 0;
+
+        @media #{$lg} {
+            padding: 1.4rem 0 3.2rem;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 16rem;
+            background: linear-gradient(0deg, rgba(#2C230B, 0.7), transparent);
+            pointer-events: none;
+            left: 0;
+            bottom: 0;
+
+            @media #{$lg} {
+                content: none;
+            }
+        }
+
+        .container {
+            position: relative;
+            display: flex;
+            gap: 8.5rem;
+
+            @media #{$lg} {
+                flex-direction: column-reverse;
+                gap: 0;
+            }
+
+            &>.footer__info__address {
+                display: none;
+                text-align: center;
+                margin-bottom: 0;
+
+                @media #{$lg} {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        width: 100%;
+        padding: 5rem 0 1.5rem;
+
+        @media #{$lg} {
+            align-items: start;
+            padding: 0;
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 5.5rem;
+
+            @media #{$lg} {
+                margin-bottom: 3.2rem;
+                width: 100%;
+            }
+        }
+
+        &__address {
+            font-family: $font-second;
+            font-weight: 600;
+            font-size: 1.6rem;
+            color: #000;
+            margin-bottom: 1.8rem;
+
+            @media #{$lg} {
+                display: none;
+            }
+        }
+
+        &__links {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+
+            @media #{$lg} {
+                display: none;
+            }
+
+            .socials {
+                a {
+                    &:hover {
+                        svg path {
+                            fill: $color-active-secondary;
+                        }
+                    }
+
+                    svg path {
+                        fill: #000;
+                    }
+                }
+            }
+
+            .email {
+                padding-top: 0.4rem;
+            }
+        }
+    }
+
+    &__logo {
+        position: relative;
+        width: 45.3rem;
+        height: 19.3rem;
+        margin-bottom: 1rem;
+
+        @media #{$lg} {
+            width: 35.4rem;
+            height: 15.1rem;
+            margin: 0;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 22.6rem;
+            height: 14.4rem;
+            background-color: rgba(#fff, 0.7);
+            filter: blur(40px);
+            border-radius: 50%;
+            pointer-events: none;
+            transform: translateX(-50%);
+            left: 50%;
+            bottom: -1.2rem;
+        }
+
+        img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+
+    &__copyright {
+        max-width: 60rem;
+
+        @media #{$lg} {
+            max-width: 23rem;
+        }
+
+        &, a {
+            font-family: $font-second;
+            font-weight: 500;
+            font-size: 1.4rem;
+            line-height: 100%;
+            color: #2C2106;
+
+            @media #{$lg} {
+                font-size: 1.2rem;
+            }
+        }
+
+        a {
+            text-decoration: underline;
+
+            &:hover {
+                color: $color-active;
+            }
+        }
+    }
+
+    &__map {
+        position: relative;
+        max-width: 66.5rem;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 665 / 415;
+        flex-shrink: 0;
+        box-sizing: border-box;
+        padding: 1.9rem 1.2rem 1.3rem 1.3rem;
+
+        @media #{$lg} {
+            max-width: none;
+            margin-bottom: 1.4rem;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url(../images/map-border.png) no-repeat center / contain;
+            pointer-events: none;
+            top: 0;
+            left: 0;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    &__luxar {
+        position: absolute;
+        width: 10rem;
+        height: 7rem;
+        right: 2rem;
+        bottom: 3.2rem;
+
+        @media #{$lg} {
+            right: 0;
+            bottom: -2rem;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+}

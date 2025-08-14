@@ -1,0 +1,138 @@
+.burger {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 6rem;
+    width: 100%;
+    height: calc(100vh - 6.5rem);
+    background: url(../images/burger-bg.jpg) no-repeat center / cover;
+    box-sizing: border-box;
+    padding: 6rem 2.5rem 2.5rem;
+    transition: all .3s ease-in-out;
+    z-index: 99;
+    opacity: 0;
+    pointer-events: none;
+    top: 6.5rem;
+    left: 0;
+
+    @media #{$lg} {
+        display: flex;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 17.5rem;
+        background: linear-gradient(0deg, rgba(#000, 0.5), transparent);
+        pointer-events: none;
+        left: 0;
+        bottom: 0;
+    }
+
+    &-opened {
+        opacity: 1;
+        pointer-events: all;
+
+        & + .burger__close {
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+
+    &__close {
+        position: fixed;
+        display: none;
+        width: 3rem;
+        height: 3rem;
+        background: url(../images/svg/close.svg) no-repeat center / contain;
+        padding: 0;
+        border: none;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+        z-index: 100;
+        top: 1.8rem;
+        left: 2.2rem;
+        opacity: 0;
+        pointer-events: none;
+
+        &:hover {
+            rotate: 180deg;
+        }
+        
+        @media #{$lg} {
+            display: initial;
+        }
+    }
+
+    &__content {
+        position: relative;
+        width: 100%;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &__menu {
+        ul {
+            flex-direction: column;
+            gap: 3rem;
+
+            li a {
+                font-size: 2.2rem;
+                color: $color-primary;
+            }
+        }
+    }
+
+    &__footer {
+        position: relative;
+        min-height: 12.5rem;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 22.2rem;
+            height: 20.4rem;
+            background: url(../images/burger-phone.png) no-repeat center / contain;
+            top: -1.7rem;
+            right: -4rem;
+        }
+
+        .phone {
+            margin-bottom: 0.5rem;
+
+            span {
+                font-size: 3rem;
+            }
+        }
+
+        .socials {
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+
+            a {
+                &:hover {
+                    svg path {
+                        fill: $color-active-secondary;
+                    }
+                }
+
+                svg path {
+                    fill: $color-primary;
+                }
+            }
+        }
+
+        .email {
+            color: $color-primary;
+
+            &:hover {
+                color: $color-active-secondary;
+            }
+        }
+    }
+}

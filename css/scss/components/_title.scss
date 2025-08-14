@@ -1,0 +1,85 @@
+.title {
+    font-family: $font-main;
+    font-weight: 400;
+    font-size: 5rem;
+    line-height: 100%;
+    text-align: center;
+    background-image: linear-gradient(78deg, $color-active, #f00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5.5rem;
+
+    @media #{$lg} {
+        font-size: 3rem;
+        margin-bottom: 3.8rem;
+    }
+
+    &:has(>span) {
+        margin-bottom: 4rem;
+
+        @media #{$lg} {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &:has(>span)::before,
+    &:has(>span)::after {
+        content: none;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 3.5rem;
+        height: 3.5rem;
+        background-color: rgba(#000, 0.5);
+        filter: blur(15px);
+        border-radius: 50%;
+        transform: translate(-50%, 100%);
+        bottom: 1rem;
+        left: 50%;
+
+        @media #{$lg} {
+            width: 2.8rem;
+            height: 2.8rem;
+            bottom: 0.5rem;
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 14.7rem;
+        height: 3.5rem;
+        background: url(../images/svg/title-decor.svg) no-repeat center / contain;
+        transform: translate(-50%, 100%);
+        bottom: 1rem;
+        left: 50%;
+
+        @media #{$lg} {
+            width: 12rem;
+            height: 3rem;
+            bottom: 0.5rem;
+        }
+    }
+
+    span {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        color: $color-primary;
+        background-image: linear-gradient(0deg, $color-primary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        margin-top: -0.5rem;
+
+        @media #{$lg} {
+            font-size: 1.8rem;
+            line-height: 2.3rem;
+        }
+    }
+}

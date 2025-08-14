@@ -1,0 +1,136 @@
+$lg: '(max-width: 992px)';
+$md: '(max-width: 768px)';
+$sm: '(max-width: 576px)';
+
+$font-main: "Stengazeta", Arial, sans-serif;
+$font-second: "Gilroy", Arial, sans-serif;
+
+$color-primary: #132843;
+$color-secondary: #8D9CA8;
+$color-border: #E0ECF1;
+$color-active: #C31E2A;
+$color-active-secondary: #FFC935;
+
+html {
+    font-size: calc(100vw / 1920 * 10);
+
+    @media #{$lg} {
+        font-size: calc(100vw / 768 * 10);
+    }
+
+    @media #{$md} {
+        font-size: calc(100vw / 576 * 10);
+    }
+
+    @media #{$sm} {
+        font-size: calc(100vw / 375 * 10);
+    }
+}
+
+body {
+    background: #F3ECD7 url(../images/pattern.png);
+
+    @media #{$lg} {
+        background: #F3ECD7 url(../images/pattern-mob.png);
+    }
+
+    &.noscroll {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        overflow-y: hidden;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 46.5rem;
+        background: url(../images/body-before.jpg) no-repeat top center / cover;
+        z-index: -1;
+        top: 0;
+        left: 0;
+
+        @media #{$lg} {
+            height: 14.4rem;
+            background: url(../images/body-before-mob.jpg) no-repeat top center / cover;
+            top: 3.8rem;
+        }
+    }
+
+    * {
+        font-family: $font-main;
+        font-size: 1.6rem;
+        margin: 0;
+        outline: none;
+    }
+}
+
+main {
+    @media #{$lg} {
+        padding-top: 11.3rem;
+    }
+}
+
+h1, h2, h3 {
+    font-weight: 400;
+}
+
+h1, h2 {
+    color: #000;
+}
+
+h1 {
+    font-size: 5rem;
+    line-height: 4.5rem;
+
+    @media #{lg} {
+        font-size: 3rem;
+        line-height: 2.5rem;
+    }
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+
+    @media #{lg} {
+        font-size: 2.5rem;
+        line-height: 2rem;
+    }
+}
+
+p {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+
+    @media #{$lg} {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
+}
+
+a {
+    font-family: $font-second;
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: $color-active;
+    transition: all .1s linear;
+
+    &:hover {
+        color: $color-active-secondary;
+    }    
+}
+
+.container {
+    max-width: 136rem;
+    width: 100%;
+    margin: 0 auto;
+
+    @media #{$lg} {
+        width: calc(100% - 2.8rem);
+        margin: 0 1.4rem;
+    }
+}

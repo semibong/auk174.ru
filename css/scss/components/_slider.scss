@@ -1,0 +1,90 @@
+.slider {
+    &-arrow {
+        position: relative;
+        width: 5rem;
+        height: 5rem;
+        transition: all .2s linear;
+        cursor: pointer;
+        z-index: 1;
+
+        &:hover {
+            &::before {
+                opacity: 0;
+            }
+
+            &::after {
+                opacity: 1;
+            }
+        }
+
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transition: all .2s linear;
+            top: 0;
+            left: 0;
+        }
+
+        &::before {
+            background: url(../images/svg/slider-arrow.svg) no-repeat center / contain;
+            opacity: 1;
+        }
+
+        &::after {
+            background: url(../images/svg/slider-arrow-active.svg) no-repeat center / contain;
+            opacity: 0;
+        }
+
+        &.swiper-button-disabled {
+            cursor: default;
+            opacity: 0.5;
+            
+            &::before {
+                opacity: 1;
+            }
+
+            &::after {
+                opacity: 0;
+            }
+        }
+
+        &-prev {
+            rotate: 180deg;
+        }
+
+        &_dark {
+            &::before {
+                background: url(../images/svg/slider-arrow-dark.svg) no-repeat center / contain;
+            }
+
+            &::after {
+                background: url(../images/svg/slider-arrow-dark-active.svg) no-repeat center / contain;
+            }
+        }
+    }
+
+    &-progressbar {
+        max-width: 67rem;
+        width: 100%;
+        height: 0.3rem !important;
+        background: rgba(#fff, 0.5);
+        border-radius: 1rem;
+        z-index: 1;
+        transform: translateX(-50%);
+        top: auto !important;
+        left: 50% !important;
+        bottom: 0;
+
+        @media #{$lg} {
+            max-width: none;
+            width: calc(100% - 2.8rem) !important;
+        }
+
+        span {
+            background: #FF5135 !important;
+            border-radius: 1rem;
+        }
+    }
+}

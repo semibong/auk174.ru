@@ -1,0 +1,110 @@
+.banner {
+    position: relative;
+    margin-bottom: 4.5rem;
+    z-index: 1;
+
+    @media #{$lg} {
+        margin-bottom: 3rem;
+    }
+
+    &__content {
+        @media #{$lg} {
+            width: 100%;
+            margin: 0;
+        }
+    }
+
+    &__slider {
+        position: relative;
+
+        &__arrows {
+            position: absolute;
+            display: flex;
+            gap: 1rem;
+            right: 1.4rem;
+            bottom: 1.4rem;
+
+            @media #{$lg} {
+                display: none;
+            }
+        }
+
+        .slider-progressbar {
+            bottom: 1.4rem;
+        }
+
+        .swiper {
+            box-shadow: 0 0 3rem 0 rgba(#000, 0.1);
+            border-radius: 2rem;
+
+            @media #{$lg} {
+                border-radius: 0;
+            }
+        }
+    }
+
+    &__slide {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 36rem;
+        box-sizing: border-box;
+        padding-top: 2.2rem;
+        border-radius: 2rem;
+        overflow: hidden;
+
+        @media #{$lg} {
+            padding-top: 1.2rem;
+            border-radius: 0;
+        }
+
+        h2 {
+            font-weight: 400;
+            font-size: 6rem;
+            line-height: 100%;
+            text-align: center;
+            color: #fff;
+            margin-bottom: -0.8rem;
+
+            @media #{$lg} {
+                font-size: 3.5rem;
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        p {
+            font-size: 2rem;
+            line-height: 100%;
+            text-align: center;
+            color: #fff;
+
+            @media #{$lg} {
+                max-width: calc(100% - 8rem);
+            }
+        }
+
+        .btn {
+            position: absolute;
+            right: 14.8rem;
+            bottom: 1.4rem;
+
+            @media #{$lg} {
+                right: 1.6rem;
+                bottom: 3.2rem;
+            }
+        }
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            z-index: -1;
+            top: 0;
+            left: 0;
+        }
+    }
+}
