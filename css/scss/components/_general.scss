@@ -41,20 +41,36 @@ body {
         overflow-y: hidden;
     }
 
+    &.main-page {
+        &::before {
+            height: 46.5rem;
+
+            @media #{$lg} {
+                height: 14.4rem;
+                top: 3.8rem;
+            }
+        }
+
+        main {
+            @media #{$lg} {
+                padding-top: 11.3rem;
+            }
+        }
+    }
+
     &::before {
         content: '';
         position: absolute;
         width: 100%;
-        height: 46.5rem;
+        height: 23.8rem;
         background: url(../images/body-before.jpg) no-repeat top center / cover;
         z-index: -1;
         top: 0;
         left: 0;
 
         @media #{$lg} {
-            height: 14.4rem;
+            height: 12.2rem;
             background: url(../images/body-before-mob.jpg) no-repeat top center / cover;
-            top: 3.8rem;
         }
     }
 
@@ -68,7 +84,7 @@ body {
 
 main {
     @media #{$lg} {
-        padding-top: 11.3rem;
+        padding-top: 10rem;
     }
 }
 

@@ -1,0 +1,123 @@
+.index-services {
+    margin-bottom: 12rem;
+
+    @media #{$lg} {
+        margin-bottom: 6rem;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        @media #{$lg} {
+            gap: 1rem;
+        }
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+        align-items: end;
+        width: calc(25% - 1.5rem);
+        height: auto;
+        aspect-ratio: 325 / 230;
+        box-sizing: border-box;
+        padding: 2rem;
+        border-radius: 2rem;
+        overflow: hidden;
+
+        @media #{$lg} {
+            width: calc(50% - 0.5rem);
+            aspect-ratio: 168 / 150;
+            padding: 1.8rem 1rem;
+        }
+
+        &:hover {
+            p {
+                color: $color-active;
+            }
+
+            img {
+                filter: none;
+            }
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 14rem;
+            background: linear-gradient(0deg, #1B2531 13%, transparent 100%);
+            pointer-events: none;
+            left: 0;
+            bottom: 0;
+
+            @media #{$lg} {
+                height: 100%;
+            }
+        }
+
+        &>a {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            top: 0;
+            left: 0;
+        }
+
+        p {
+            font-family: $font-main;
+            font-size: 2rem;
+            line-height: 100%;
+            color: #fff;
+            transition: all .3s ease-in-out;
+            z-index: 1;
+
+            @media #{$lg} {
+                font-size: 1.6rem;
+                line-height: 1.6rem;
+            }
+        }
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            filter: grayscale(1);
+            z-index: -1;
+            transition: all .3s ease-in-out;
+            top: 0;
+            left: 0;
+
+            @media #{$lg} {
+                filter: none;
+            }
+        }
+
+        &_all {
+            justify-content: center;
+            align-items: center;
+
+            &::before {
+                content: none;
+            }
+
+            p {
+                font-size: 2.5rem;
+                color: $color-primary;
+
+                @media #{$lg} {
+                    font-size: 2rem;
+                }
+            }
+
+            img {
+                filter: none;
+            }
+        }
+    }
+}
