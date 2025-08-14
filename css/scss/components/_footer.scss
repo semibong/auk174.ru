@@ -165,7 +165,7 @@
                 a {
                     &:hover {
                         svg path {
-                            fill: $color-active-secondary;
+                            fill: revert-layer;
                         }
                     }
 

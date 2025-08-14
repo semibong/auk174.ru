@@ -5,13 +5,13 @@
     a {
         display: flex;
         align-items: center;
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 3rem;
+        height: 3rem;
         cursor: pointer;
 
         &:hover {
             svg path {
-                fill: $color-active-secondary;
+                fill: revert-layer;
             }
         }
 
@@ -21,6 +21,7 @@
 
             path {
                 transition: all .1s linear;
+                fill: #B2A481;
             }
         }
     }

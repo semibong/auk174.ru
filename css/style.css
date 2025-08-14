@@ -334,12 +334,12 @@ a:hover {
 .socials a {
   display: flex;
   align-items: center;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3rem;
+  height: 3rem;
   cursor: pointer;
 }
 .socials a:hover svg path {
-  fill: #FFC935;
+  fill: revert-layer;
 }
 .socials a svg {
   width: 100%;
@@ -347,6 +347,7 @@ a:hover {
 }
 .socials a svg path {
   transition: all 0.1s linear;
+  fill: #B2A481;
 }
 
 .phone {
@@ -1087,7 +1088,7 @@ a:hover {
   }
 }
 .footer__info__links .socials a:hover svg path {
-  fill: #FFC935;
+  fill: revert-layer;
 }
 .footer__info__links .socials a svg path {
   fill: #000;
