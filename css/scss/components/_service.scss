@@ -1,0 +1,274 @@
+.service {
+    margin-bottom: 2.8rem;
+
+    @media #{$lg} {
+        margin-bottom: 0;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        @media #{$lg} {
+            gap: 1rem;
+        }
+    }
+
+    &__card {
+        display: flex;
+        gap: 3rem;
+        background-color: rgba(#fff, 0.5);
+        box-sizing: border-box;
+        padding: 2rem;
+        border-radius: 2rem;
+
+        @media #{$lg} {
+            gap: 1.5rem;
+            flex-direction: column;
+            background-color: transparent;
+            padding: 0;
+            border-radius: 0;
+            margin-bottom: 2rem;
+        }
+
+        &__image {
+            position: relative;
+            max-width: 48.5rem;
+            width: 100%;
+            height: max-content;
+            aspect-ratio: 485 / 290;
+            flex-shrink: 0;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(335deg, rgba(#000, 0.6) 0%, transparent 50%);
+                border-radius: 2rem;
+                pointer-events: none;
+                z-index: 1;
+                top: 0;
+                left: 0;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 2rem;
+            }
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        &__text {
+            h2 {
+                font-family: $font-main;
+                font-weight: 400;
+                font-size: 5rem;
+                line-height: 100%;
+                color: $color-primary;
+                margin-bottom: 1rem;
+
+                @media #{$lg} {
+                    font-size: 3rem;
+                    line-height: 2.5rem;
+                    margin-bottom: 1.8rem;
+                }
+            }
+
+            h3 {
+                font-family: $font-main;
+                font-weight: 400;
+                font-size: 2.5rem;
+                line-height: 2rem;
+                color: $color-active;
+                margin-bottom: 0.4rem;
+            }
+
+            p, span, li, a {
+                font-family: $font-second;
+                font-weight: 500;
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+                color: $color-primary;
+
+                @media #{$lg} {
+                    font-size: 1.4rem;
+                    line-height: 1.8rem;
+                }
+            }
+
+            p, ul, ol {
+                margin-bottom: 0.8rem;
+
+                @media #{$lg} {
+                    margin-bottom: 1.2rem;
+                }
+            }
+
+            p {
+                &>span {
+                    font-weight: 600;
+                    color: $color-active;
+                }
+
+                &>a {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .btn {
+            @media #{$sm} {
+                width: 100%;
+                font-size: 2rem;
+            }
+        }
+    }
+
+    &__courses {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        @media #{$lg} {
+            gap: 1rem;
+        }
+    }
+
+    &__course {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: calc(25% - 1.5rem);
+        min-height: 20rem;
+        background-color: rgba(#fff, 0.5);
+        box-sizing: border-box;
+        padding: 1.8rem 2rem;
+        border-radius: 2rem;
+
+        @media #{$lg} {
+            width: 100%;
+            min-height: 11.5rem;
+            padding: 1.3rem 3rem 1.5rem 1rem;
+        }
+
+        h3 {
+            font-weight: 400;
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+            color: $color-primary;
+
+            @media #{$lg} {
+                font-size: 2rem;
+                line-height: 2rem;
+            }
+        }
+
+        &__rate {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__term {
+            font-family: $font-main;
+            font-size: 2.5rem;
+            line-height: 1.6rem;
+            color: $color-active;
+
+            @media #{$lg} {
+                font-size: 2rem;
+            }
+        }
+
+        &__price {
+            font-family: $font-main;
+            font-size: 3rem;
+            line-height: 1.6rem;
+            color: $color-primary;
+
+            @media #{$lg} {
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    &__description {
+        background-color: rgba(#fff, 0.5);
+        box-sizing: border-box;
+        padding: 5rem 12.5rem 11rem 4.2rem;
+        border-radius: 2rem;
+
+        @media #{$lg} {
+            padding: 2.4rem 1rem 4rem;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: $font-main;
+            font-weight: 400;
+            color: $color-active;
+            margin-left: 0.7rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            line-height: 3rem;
+        }
+
+        h2 {
+            font-size: 3rem;
+            line-height: 2.5rem;
+        }
+
+        h3 {
+            font-size: 2.5rem;
+            line-height: 2rem;
+        }
+
+        h4 {
+            font-size: 2rem;
+            line-height: 1.6rem;
+        }
+
+        *, p, a, li, span {
+            font-family: $font-second;
+            font-weight: 500;
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+            color: $color-primary;
+
+            @media #{$lg} {
+                font-size: 1.4rem;
+                line-height: 1.8rem;
+            }
+        }
+
+        p, ul, ol, h1, h2, h3, h4 {
+            margin-bottom: 1.5rem;
+
+            @media #{$lg} {
+                margin-bottom: 1.2rem;
+            }
+        }
+
+        a {
+            color: $color-active;
+
+            &:hover {
+                color: $color-active-secondary;
+            }
+        }
+
+        ul, ol {
+            padding-left: 2rem;
+        }
+    }
+}

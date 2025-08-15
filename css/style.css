@@ -768,8 +768,8 @@ a:hover {
 @media (max-width: 992px) {
   .header-fixed__logo {
     position: absolute;
-    width: 19.7rem;
-    height: 8.4rem;
+    width: 22.7rem;
+    height: 8.6rem;
     transform: translateX(-50%);
     top: 0.3rem;
     left: 50%;
@@ -781,13 +781,13 @@ a:hover {
     position: absolute;
     height: 2rem;
     width: calc(100% - 5rem);
-    background-color: #000;
+    background-color: #fff;
     border-radius: 50%;
     z-index: -1;
     transform: translateX(-50%);
-    bottom: 1rem;
+    bottom: 0;
     left: 50%;
-    filter: blur(20px);
+    filter: blur(10px);
   }
 }
 .header-fixed__logo picture, .header-fixed__logo img {
@@ -2161,7 +2161,7 @@ a:hover {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: linear-gradient(315deg, rgba(0, 0, 0, 0.6) 0%, transparent 50%);
+  background: linear-gradient(335deg, rgba(0, 0, 0, 0.6) 0%, transparent 50%);
   border-radius: 2rem;
   pointer-events: none;
   z-index: 1;
@@ -2317,4 +2317,259 @@ a:hover {
   object-fit: cover;
   object-position: bottom center;
   border-radius: 2rem;
+}
+
+.service {
+  margin-bottom: 2.8rem;
+}
+@media (max-width: 992px) {
+  .service {
+    margin-bottom: 0;
+  }
+}
+.service__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media (max-width: 992px) {
+  .service__content {
+    gap: 1rem;
+  }
+}
+.service__card {
+  display: flex;
+  gap: 3rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+@media (max-width: 992px) {
+  .service__card {
+    gap: 1.5rem;
+    flex-direction: column;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    margin-bottom: 2rem;
+  }
+}
+.service__card__image {
+  position: relative;
+  max-width: 48.5rem;
+  width: 100%;
+  height: max-content;
+  aspect-ratio: 485/290;
+  flex-shrink: 0;
+}
+.service__card__image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(335deg, rgba(0, 0, 0, 0.6) 0%, transparent 50%);
+  border-radius: 2rem;
+  pointer-events: none;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.service__card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 2rem;
+}
+.service__card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.service__card__text h2 {
+  font-family: "Stengazeta", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 5rem;
+  line-height: 100%;
+  color: #132843;
+  margin-bottom: 1rem;
+}
+@media (max-width: 992px) {
+  .service__card__text h2 {
+    font-size: 3rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.8rem;
+  }
+}
+.service__card__text h3 {
+  font-family: "Stengazeta", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 2rem;
+  color: #C31E2A;
+  margin-bottom: 0.4rem;
+}
+.service__card__text p, .service__card__text span, .service__card__text li, .service__card__text a {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #132843;
+}
+@media (max-width: 992px) {
+  .service__card__text p, .service__card__text span, .service__card__text li, .service__card__text a {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+}
+.service__card__text p, .service__card__text ul, .service__card__text ol {
+  margin-bottom: 0.8rem;
+}
+@media (max-width: 992px) {
+  .service__card__text p, .service__card__text ul, .service__card__text ol {
+    margin-bottom: 1.2rem;
+  }
+}
+.service__card__text p > span {
+  font-weight: 600;
+  color: #C31E2A;
+}
+.service__card__text p > a {
+  margin-bottom: 0;
+}
+@media (max-width: 576px) {
+  .service__card .btn {
+    width: 100%;
+    font-size: 2rem;
+  }
+}
+.service__courses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+@media (max-width: 992px) {
+  .service__courses {
+    gap: 1rem;
+  }
+}
+.service__course {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(25% - 1.5rem);
+  min-height: 20rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  padding: 1.8rem 2rem;
+  border-radius: 2rem;
+}
+@media (max-width: 992px) {
+  .service__course {
+    width: 100%;
+    min-height: 11.5rem;
+    padding: 1.3rem 3rem 1.5rem 1rem;
+  }
+}
+.service__course h3 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  color: #132843;
+}
+@media (max-width: 992px) {
+  .service__course h3 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+.service__course__rate {
+  display: flex;
+  justify-content: space-between;
+}
+.service__course__term {
+  font-family: "Stengazeta", Arial, sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.6rem;
+  color: #C31E2A;
+}
+@media (max-width: 992px) {
+  .service__course__term {
+    font-size: 2rem;
+  }
+}
+.service__course__price {
+  font-family: "Stengazeta", Arial, sans-serif;
+  font-size: 3rem;
+  line-height: 1.6rem;
+  color: #132843;
+}
+@media (max-width: 992px) {
+  .service__course__price {
+    font-size: 2.5rem;
+  }
+}
+.service__description {
+  background-color: rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  padding: 5rem 12.5rem 11rem 4.2rem;
+  border-radius: 2rem;
+}
+@media (max-width: 992px) {
+  .service__description {
+    padding: 2.4rem 1rem 4rem;
+  }
+}
+.service__description h1, .service__description h2, .service__description h3, .service__description h4 {
+  font-family: "Stengazeta", Arial, sans-serif;
+  font-weight: 400;
+  color: #C31E2A;
+  margin-left: 0.7rem;
+}
+.service__description h1 {
+  font-size: 3.5rem;
+  line-height: 3rem;
+}
+.service__description h2 {
+  font-size: 3rem;
+  line-height: 2.5rem;
+}
+.service__description h3 {
+  font-size: 2.5rem;
+  line-height: 2rem;
+}
+.service__description h4 {
+  font-size: 2rem;
+  line-height: 1.6rem;
+}
+.service__description *, .service__description p, .service__description a, .service__description li, .service__description span {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #132843;
+}
+@media (max-width: 992px) {
+  .service__description *, .service__description p, .service__description a, .service__description li, .service__description span {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+}
+.service__description p, .service__description ul, .service__description ol, .service__description h1, .service__description h2, .service__description h3, .service__description h4 {
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 992px) {
+  .service__description p, .service__description ul, .service__description ol, .service__description h1, .service__description h2, .service__description h3, .service__description h4 {
+    margin-bottom: 1.2rem;
+  }
+}
+.service__description a {
+  color: #C31E2A;
+}
+.service__description a:hover {
+  color: #FFC935;
+}
+.service__description ul, .service__description ol {
+  padding-left: 2rem;
 }/*# sourceMappingURL=style.css.map */
