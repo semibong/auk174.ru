@@ -39,30 +39,12 @@
 
     &__slide {
         display: flex;
-        transition: all .3s linear;
-
-        @media (min-width: 993px) {
-            width: 28rem !important;
-        }
-
-        &.swiper-slide-active {
-            @media (min-width: 993px) {
-                width: 61rem !important;
-            }
-
-            .why__item {
-
-                p {
-                    display: initial;
-                }
-            }
-        }
+        height: auto;
     }
 
     &__item {
         display: flex;
         flex-direction: column;
-        height: 52rem;
         background-color: rgba(#fff, 0.5);
         box-sizing: border-box;
         padding: 2rem;
@@ -108,12 +90,10 @@
             line-height: 2.2rem;
             color: $color-primary;
             margin: 0 1rem;
-            display: none;
 
             @media #{$lg} {
                 font-size: 1.4rem;
                 line-height: 1.6rem;
-                display: initial;
             }
         }
     }

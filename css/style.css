@@ -1641,25 +1641,11 @@ a:hover {
 }
 .why__slide {
   display: flex;
-  transition: all 0.3s linear;
-}
-@media (min-width: 993px) {
-  .why__slide {
-    width: 28rem !important;
-  }
-}
-@media (min-width: 993px) {
-  .why__slide.swiper-slide-active {
-    width: 61rem !important;
-  }
-}
-.why__slide.swiper-slide-active .why__item p {
-  display: initial;
+  height: auto;
 }
 .why__item {
   display: flex;
   flex-direction: column;
-  height: 52rem;
   background-color: rgba(255, 255, 255, 0.5);
   box-sizing: border-box;
   padding: 2rem;
@@ -1706,13 +1692,11 @@ a:hover {
   line-height: 2.2rem;
   color: #132843;
   margin: 0 1rem;
-  display: none;
 }
 @media (max-width: 992px) {
   .why__item p {
     font-size: 1.4rem;
     line-height: 1.6rem;
-    display: initial;
   }
 }
 

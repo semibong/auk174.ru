@@ -88,17 +88,17 @@ $(document).ready(function () {
             slidesPerView: 1.3,
             spaceBetween: 10,
             centeredSlides: false,
-            effect: 'coverflow',
-            coverflowEffect: {
-                rotate: 0,
-                slideShadows: false,
-                scale: 0.9
-            },
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-                pauseOnMouseEnter: true
-            },
+            // effect: 'fade',
+            // coverflowEffect: {
+            //     rotate: 0,
+            //     slideShadows: false,
+            //     scale: 0.9
+            // },
+            // autoplay: {
+            //     delay: 3000,
+            //     disableOnInteraction: false,
+            //     pauseOnMouseEnter: true
+            // },
             navigation: {
                 prevEl: '.why .slider-arrow-prev',
                 nextEl: '.why .slider-arrow-next'
@@ -109,7 +109,7 @@ $(document).ready(function () {
             },
             breakpoints: {
                 993: {
-                    slidesPerView: 3.4,
+                    slidesPerView: 3,
                     spaceBetween: 20,
                     centeredSlides: true,
                 },
