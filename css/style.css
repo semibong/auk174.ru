@@ -1868,6 +1868,7 @@ a:hover {
   width: 51.3rem;
   height: 35.6rem;
   background: url(../images/consultation-img-2.png) no-repeat center/contain;
+  pointer-events: none;
   top: 3.7rem;
   left: -16.2rem;
 }
