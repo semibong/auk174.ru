@@ -5,6 +5,10 @@
         margin-bottom: 4rem;
     }
 
+    &__content {
+        max-width: 155rem;
+    }
+
     &__slider {
         position: relative;
 
@@ -28,11 +32,14 @@
         }
 
         .swiper {
-            max-width: 117rem;
+            max-width: calc(100% - 19rem);
             padding-bottom: 3rem;
+            overflow: visible !important;
 
             @media #{$lg} {
+                max-width: none;
                 width: calc(100% + 1.4rem);
+                overflow: hidden !important;
             }
         }
     }
@@ -40,6 +47,21 @@
     &__slide {
         display: flex;
         height: auto;
+
+        &.swiper-slide {
+            opacity: 0 !important;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+
+            @media #{$lg} {
+                opacity: 1 !important;
+            }
+        }
+
+        &.swiper-slide-active,
+        &.swiper-slide-prev,
+        &.swiper-slide-next {
+            opacity: 1 !important;
+        }
     }
 
     &__item {

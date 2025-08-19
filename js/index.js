@@ -83,22 +83,24 @@ $(document).ready(function () {
 
     if ($('.why').length) {
         const whySlider = new Swiper('.why__slider .swiper', {
-            speed: 500,
+            speed: 1000,
             loop: true,
             slidesPerView: 1.3,
             spaceBetween: 10,
             centeredSlides: false,
-            // effect: 'fade',
-            // coverflowEffect: {
-            //     rotate: 0,
-            //     slideShadows: false,
-            //     scale: 0.9
-            // },
-            // autoplay: {
-            //     delay: 3000,
-            //     disableOnInteraction: false,
-            //     pauseOnMouseEnter: true
-            // },
+            effect: 'coverflow',
+            coverflowEffect: {
+                rotate: 0,
+                depth: 100,
+                modifier: 1,
+                scale: 0.9,
+                slideShadows: false
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true
+            },
             navigation: {
                 prevEl: '.why .slider-arrow-prev',
                 nextEl: '.why .slider-arrow-next'
@@ -108,15 +110,15 @@ $(document).ready(function () {
                 type: 'progressbar',
             },
             breakpoints: {
+                320: {
+                    effect: 'slide',
+                },
                 993: {
+                    effect: 'coverflow',
                     slidesPerView: 3,
                     spaceBetween: 20,
                     centeredSlides: true,
                 },
-
-                320: {
-                    effect: 'slide'
-                }
             }
         });
     }
