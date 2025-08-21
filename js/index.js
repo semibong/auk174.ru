@@ -155,4 +155,26 @@ $(document).ready(function () {
             $(this).addClass('active');
         });
     }
+
+    if ($('.intelligence__item').length) {
+        $('.intelligence__item').each((_, el) => {
+            if (!$(el).hasClass('active')) {
+                const content = $(el.children[1]);
+                content.slideUp(0);
+            }
+        });
+
+        $('.intelligence__item__header').on('click', function () {
+            const parent = $(this.offsetParent);
+            const content = $(this).next();
+
+            parent.toggleClass('active');
+
+            if (parent.hasClass('active')) {
+                content.slideDown(300);
+            } else {
+                content.slideUp(300);
+            }
+        });
+    }
 });
