@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    Fancybox.bind('[data-fancybox]');
+
     var bvi = new isvek.Bvi();
 
     $('input[type=tel]').inputmask({
@@ -144,6 +146,13 @@ $(document).ready(function () {
                     spaceBetween: 50,
                 }
             }
+        });
+    }
+
+    if ($('.reviews').length) {
+        $('.reviews__header__sources__item').on('click', function () {
+            $('.reviews__header__sources__item').removeClass('active');
+            $(this).addClass('active');
         });
     }
 });

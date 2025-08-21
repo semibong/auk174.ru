@@ -1,0 +1,25 @@
+.promotions {
+    margin-bottom: 8.5rem;
+
+    @media #{$lg} {
+        margin-bottom: 4rem;
+    }
+
+    .services {
+        &__item {
+            &__image {
+                img {
+                    filter: none;
+                }
+            }
+
+            &__info {
+                h3 {
+                    @media #{$lg} {
+                        color: #E0ECF1;
+                    }
+                }
+            }
+        }
+    }
+}

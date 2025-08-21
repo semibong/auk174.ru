@@ -35,8 +35,14 @@
         &:hover {
             box-shadow: 0 0 6rem 0 rgba(#000, 0.1);
 
-            .services__item__image img {
-                filter: none;
+            .services__item {
+                &__image img {
+                    filter: none;
+                }
+
+                &__detail {
+                    color: $color-active;
+                }
             }
         }
 
@@ -175,6 +181,19 @@
 
             @media #{$lg} {
                 font-size: 2rem;
+            }
+        }
+
+        &__detail {
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 1.6rem;
+            color: $color-secondary;
+            transition: all .3s ease-in-out;
+
+            @media #{$lg} {
+                font-size: 1.5rem;
+                color: $color-active;
             }
         }
 

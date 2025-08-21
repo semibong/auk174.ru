@@ -12,6 +12,7 @@ $color-active: #C31E2A;
 $color-active-secondary: #FFC935;
 
 html {
+    scroll-behavior: smooth;
     font-size: calc(100vw / 1920 * 10);
 
     @media #{$lg} {

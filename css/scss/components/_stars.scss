@@ -1,0 +1,13 @@
+.stars {
+    width: 10.5rem;
+    height: 1.5rem;
+    background: url(../images/svg/star.svg) repeat-x top left;
+    background-size: 2.1rem 1.5rem;
+
+    &__current {
+        width: 0;
+        height: 1.5rem;
+        background: url(../images/svg/star-active.svg) repeat-x top left;
+        background-size: 2.1rem 1.5rem;
+    }
+}
