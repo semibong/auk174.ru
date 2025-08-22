@@ -236,6 +236,53 @@
             }
         }
 
+        &_image {
+            position: relative;
+            display: flex;
+            width: calc(33.3% - 1.3rem);
+            min-height: 43.5rem;
+            order: 1;
+
+            @media #{$lg} {
+                width: 100%;
+                min-height: 37.5rem;
+                overflow: hidden;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 38.5rem;
+                height: 29.8rem;
+                background: url(../images/leave-review-img-2.png) no-repeat center / contain;
+                pointer-events: none;
+                right: 2.5rem;
+                bottom: -3rem;
+
+                @media #{$lg} {
+                    width: 35.6rem;
+                    height: 29.8rem;
+                    top: 8rem;
+                    right: -5rem;
+                    bottom: auto;
+                }
+            }
+
+            img {
+                width: 100%;
+                height: max-content;
+                object-fit: contain;
+                object-position: center;
+                box-shadow: 0 0.4rem 3rem 0 rgba(#000, 0.25);
+                border-radius: 2rem;
+
+                @media #{$lg} {
+                    width: 34.7rem;
+                    box-shadow: none;
+                }
+            }
+        }
+
         h3 {
             font-size: 2.5rem;
             line-height: 2rem;

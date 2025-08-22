@@ -2994,6 +2994,53 @@ a:hover {
     margin-bottom: 0;
   }
 }
+.reviews__item_image {
+  position: relative;
+  display: flex;
+  width: calc(33.3% - 1.3rem);
+  min-height: 43.5rem;
+  order: 1;
+}
+@media (max-width: 992px) {
+  .reviews__item_image {
+    width: 100%;
+    min-height: 37.5rem;
+    overflow: hidden;
+  }
+}
+.reviews__item_image::before {
+  content: "";
+  position: absolute;
+  width: 38.5rem;
+  height: 29.8rem;
+  background: url(../images/leave-review-img-2.png) no-repeat center/contain;
+  pointer-events: none;
+  right: 2.5rem;
+  bottom: -3rem;
+}
+@media (max-width: 992px) {
+  .reviews__item_image::before {
+    width: 35.6rem;
+    height: 29.8rem;
+    top: 8rem;
+    right: -5rem;
+    bottom: auto;
+  }
+}
+.reviews__item_image img {
+  width: 100%;
+  height: max-content;
+  object-fit: contain;
+  object-position: center;
+  box-shadow: 0 0.4rem 3rem 0 rgba(0, 0, 0, 0.25);
+  border-radius: 2rem;
+}
+@media (max-width: 992px) {
+  .reviews__item_image img {
+    width: 34.7rem;
+    box-shadow: none;
+  }
+}
 .reviews__item h3 {
   font-size: 2.5rem;
   line-height: 2rem;
@@ -3049,153 +3096,6 @@ a:hover {
 }
 .reviews__item > a:hover {
   color: #FFC935;
-}
-
-.leave-review {
-  position: relative;
-  margin-bottom: 14.5rem;
-}
-@media (max-width: 992px) {
-  .leave-review {
-    margin-bottom: 0;
-  }
-}
-.leave-review__anchor {
-  position: absolute;
-  top: -15rem;
-}
-@media (max-width: 992px) {
-  .leave-review__anchor {
-    top: -12rem;
-  }
-}
-.leave-review__content {
-  position: relative;
-}
-.leave-review__content::before {
-  content: "";
-  position: absolute;
-  width: 44.2rem;
-  height: 27.7rem;
-  background: url(../images/leave-review-img-1.jpg) no-repeat center/contain;
-  box-shadow: 0 0.4rem 3rem 0 rgba(0, 0, 0, 0.25);
-  border-radius: 0.5rem;
-  z-index: -1;
-  top: -2.4rem;
-  right: 0;
-}
-@media (max-width: 992px) {
-  .leave-review__content::before {
-    content: none;
-  }
-}
-.leave-review__content::after {
-  content: "";
-  position: absolute;
-  width: 42.1rem;
-  height: 31.8rem;
-  background: url(../images/leave-review-img-2.png) no-repeat center/contain;
-  z-index: -1;
-  right: -1.8rem;
-  bottom: -7rem;
-}
-@media (max-width: 992px) {
-  .leave-review__content::after {
-    width: 11.7rem;
-    height: 13.2rem;
-    background: url(../images/marks.png) no-repeat center/contain;
-    pointer-events: none;
-    z-index: 1;
-    top: 0.6rem;
-    right: 1.2rem;
-    bottom: auto;
-  }
-}
-.leave-review__form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  max-width: 94rem;
-  width: 100%;
-}
-@media (max-width: 992px) {
-  .leave-review__form {
-    gap: 0.5rem;
-  }
-}
-.leave-review__form input, .leave-review__form textarea {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-weight: 600;
-  font-size: 1.6rem;
-  line-height: 2.1rem;
-  color: #515865;
-  width: 100%;
-  height: 5rem;
-  background-color: rgba(255, 255, 255, 0.5);
-  box-sizing: border-box;
-  padding: 0 3rem;
-  border: none;
-  border-radius: 2rem;
-}
-@media (max-width: 992px) {
-  .leave-review__form input, .leave-review__form textarea {
-    padding: 0 1.8rem;
-  }
-}
-.leave-review__form input::placeholder, .leave-review__form textarea::placeholder {
-  color: #515865;
-}
-.leave-review__form textarea {
-  resize: none;
-  height: 22rem;
-  padding: 2rem 3rem;
-}
-@media (max-width: 992px) {
-  .leave-review__form textarea {
-    height: 12.5rem;
-    padding: 2rem 1.8rem;
-  }
-}
-.leave-review__form__controls {
-  display: flex;
-  align-items: center;
-  gap: 2.2rem;
-  margin-top: 0.5rem;
-}
-@media (max-width: 992px) {
-  .leave-review__form__controls {
-    flex-direction: column-reverse;
-    align-items: start;
-    gap: 1.2rem;
-  }
-}
-.leave-review__form__controls .checkbox {
-  max-width: 66rem;
-}
-.leave-review__form__controls .checkbox label {
-  padding-left: 4.3rem;
-}
-@media (max-width: 992px) {
-  .leave-review__form__controls .checkbox label {
-    line-height: 1rem;
-  }
-}
-.leave-review__form__controls .checkbox label::before, .leave-review__form__controls .checkbox label::after {
-  width: 3rem;
-  height: 3rem;
-  top: 0;
-}
-.leave-review__form__controls .checkbox label::before {
-  background: url(../images/svg/review-checkbox.svg) no-repeat center/contain;
-}
-.leave-review__form__controls .checkbox label::after {
-  background: url(../images/svg/review-checkbox-active.svg) no-repeat center/contain;
-}
-.leave-review__form__controls .checkbox label, .leave-review__form__controls .checkbox label a {
-  color: #8D9CA8;
-}
-.leave-review__form__controls .checkbox label a:hover {
-  color: #C31E2A;
 }
 
 .promotions {
