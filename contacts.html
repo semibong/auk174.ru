@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="js/bvi/bvi.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="main-page">
+<body>
     <header class="header">
         <div class="container">
             <a href="index.html" class="header__logo">
@@ -64,7 +64,7 @@
                     <div class="menu__li-group">
                         <li><a href="reviews.html">отзывы</a></li>
                         <li><a href="javascript:void(0)" class="highlight">ОПЛАТИТЬ ОБУЧЕНИЕ</a></li>
-                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="contacts.html" class="active">Контакты</a></li>
                     </div>
                 </ul>
             </nav>
@@ -89,7 +89,7 @@
                     <li><a href="reviews.html">Отзывы</a></li>
                     <li><a href="promotions.html">Акции и скидки</a></li>
                     <li><a href="javascript:void(0)">ОПЛАТИТЬ ОБУЧЕНИЕ</a></li>
-                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="contacts.html" class="active">Контакты</a></li>
                 </ul>
             </nav>
             <div class="socials">
@@ -121,7 +121,7 @@
                     <li><a href="promotions.html">акции и скидки</a></li>
                     <li><a href="reviews.html">отзывы</a></li>
                     <li><a href="javascript:void(0)">ОПЛАТИТЬ ОБУЧЕНИЕ</a></li>
-                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="contacts.html" class="active">Контакты</a></li>
                 </ul>
             </nav>
         </div>
@@ -152,134 +152,93 @@
     </div>
     <button class="burger__close"></button>
     <main>
-        <h1 style="display: none;">Автошкола в Челябинске</h1>
-        <div class="banner">
-            <div class="container banner__content">
-                <div class="banner__slider">
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide banner__slide">
-                                <h2>Обучение водителей ДОПОГ</h2>
-                                <p>курсы подготовки по перевозке опасных грузов</p>
-                                <a href="javascript:void(0)" class="btn">Подробнее</a>
-                                <picture>
-                                    <source media="(max-width: 576px)" srcset="images/banner-mob.jpg">
-                                    <img src="images/banner.jpg" alt="">
-                                </picture>
-                            </div>
-                            <div class="swiper-slide banner__slide">
-                                <h2>Обучение водителей ДОПОГ 2</h2>
-                                <p>курсы подготовки по перевозке опасных грузов</p>
-                                <a href="javascript:void(0)" class="btn">Подробнее</a>
-                                <picture>
-                                    <source media="(max-width: 576px)" srcset="images/banner-mob.jpg">
-                                    <img src="images/banner.jpg" alt="">
-                                </picture>
-                            </div>
-                            <div class="swiper-slide banner__slide">
-                                <h2>Обучение водителей ДОПОГ 3</h2>
-                                <p>курсы подготовки по перевозке опасных грузов</p>
-                                <a href="javascript:void(0)" class="btn">Подробнее</a>
-                                <picture>
-                                    <source media="(max-width: 576px)" srcset="images/banner-mob.jpg">
-                                    <img src="images/banner.jpg" alt="">
-                                </picture>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-progressbar"></div>
-                    <div class="banner__slider__arrows">
-                        <div class="slider-arrow slider-arrow_dark slider-arrow-prev"></div>
-                        <div class="slider-arrow slider-arrow_dark slider-arrow-next"></div>
-                    </div>
+        <div class="breadcrumb">
+            <div class="container breadcrumb__content">
+                <div class="breadcrumb__item">
+                    <a href="index.html">
+                        <span>Главная</span>
+                    </a>
+                    <i>&nbsp;>&nbsp;</i>
+                </div>
+                <div class="breadcrumb__item">
+                    <span>Контакты</span>
                 </div>
             </div>
         </div>
-        <section class="index-services">
-            <h2 class="title">Наши услуги</h2>
-            <div class="container index-services__content">
-                <div class="index-services__item">
-                    <a href="service.html"></a>
-                    <p>Обучение на категорию «В»</p>
-                    <img src="images/services-img-1.jpg" alt="">
-                </div>
-                <div class="index-services__item">
-                    <a href="service.html"></a>
-                    <p>Обучение водителей ДОПОГ</p>
-                    <img src="images/services-img-2.jpg" alt="">
-                </div>
-                <div class="index-services__item">
-                    <a href="service.html"></a>
-                    <p>Обучение специалистов, ответственных за безопасность дорожного движения</p>
-                    <img src="images/services-img-3.jpg" alt="">
-                </div>
-                <div class="index-services__item">
-                    <a href="service.html"></a>
-                    <p>Обучение контролеров технического состояния автотранспорта</p>
-                    <img src="images/services-img-4.jpg" alt="">
-                </div>
-                <div class="index-services__item">
-                    <a href="service.html"></a>
-                    <p>Диспетчер автомобильного и городского наземного электрического транспорта</p>
-                    <img src="images/services-img-5.jpg" alt="">
-                </div>
-                <div class="index-services__item">
-                    <a href="service.html"></a>
-                    <p>Обучение консультантов по безопасной перевозке опасных грузов</p>
-                    <img src="images/services-img-6.jpg" alt="">
-                </div>
-                <div class="index-services__item">
-                    <a href="service.html"></a>
-                    <p>Ежегодная 20-ти часовая подготовка по БДД для водителей</p>
-                    <img src="images/services-img-7.jpg" alt="">
-                </div>
-                <div class="index-services__item index-services__item_all">
-                    <a href="services.html"></a>
-                    <p>все услуги</p>
-                    <img src="images/services-img-all.jpg" alt="">
-                </div>
-            </div>
-        </section>
-        <section class="why">
-            <h2 class="title">Почему именно<span>«Автомобильный учебный комбинат»</span></h2>
-            <div class="container why__content">
-                <div class="why__slider">
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide why__slide">
-                                <div class="why__item">
-                                    <img src="images/why-img-1.jpg" alt="">
-                                    <h3>ОБУЧАЕМ ПО-НАСТОЯЩЕМУ БОЛЕЕ ПОЛУВЕКА</h3>
-                                    <p>Автомобильный учебный комбинат обучает с 1972 года! За более чем полувековую историю накоплен внушительный опыт работы и сформирован штат высококвалифицированных преподавателей и инструкторов.</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide why__slide">
-                                <div class="why__item">
-                                    <img src="images/why-img-2.jpg" alt="">
-                                    <h3>НАХОДИМСЯ В ЦЕНТРАЛЬНОЙ ЧАСТИ ГОРОДА</h3>
-                                    <p>Комбинат находятся на пересечении улицы Российской и улицы Труда. Отличная транспортная доступность. Добраться до нас удобно с любого района города.</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide why__slide">
-                                <div class="why__item">
-                                    <img src="images/why-img-3.jpg" alt="">
-                                    <h3>ГАРАНТРОВАННО СООТВЕТСТВУЕМ ЗАКОНОДАТЕЛЬСТВУ</h3>
-                                    <p>Организация имеет Лицензию на образовательную деятельность от Минобрнауки Челябинской области и Удостоверение государственного автодорожного надзора по Челябинской области. Учебно-материальная база соответствует всем требованиям. Данные выдаваемых Вам документов об образовании – установленным порядком размещаются в государственной системе ФИС ФРДО, что гарантирует их подлинность.</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide why__slide">
-                                <div class="why__item">
-                                    <img src="images/why-img-1.jpg" alt="">
-                                    <h3>С ВАМИ ОТ НАЧАЛА ДО КОНЦА</h3>
-                                    <p>Поддерживаем в процессе всего периода обучения, а после выдачи документов о его прохождении – лично сопровождаем Вас во время сдачи экзаменов в ГИБДД и в УГАДН по Челябинской области, с которыми выстроено чёткое взаимодействие.</p>
-                                </div>
+        <section class="contacts">
+            <h1 class="title">Контакты</h1>
+            <div class="container contacts__wrapper">
+                <h2>Автономная некоммерческая организация дополнительного <br>профессионального образования <span>«Автомобильный учебный комбинат»</span></h2>
+                <div class="contacts__content">
+                    <div class="contacts__info">
+                        <div class="contacts__info__item contacts__info__item_address">
+                            <a href="https://yandex.ru/maps/56/chelyabinsk/house/rossiyskaya_ulitsa_63/YkgYcgZmQUIEQFtvfX12c3tnZw==/?ll=61.416873%2C55.172743&z=17" target="_blank">454006, г.Челябинск, улица Российская, дом 63</a>
+                        </div>
+                        <div class="contacts__info__item contacts__info__item_phone">
+                            <span>Наш контактный телефон</span>
+                            <a href="tel:+73512644044">8 (351) 264-40-44 — директор</a>
+                            <a href="tel:+73512669279">8 (351) 266-92-79 — отдел оформления</a>
+                            <a href="tel:+73512644034">8 (351) 264-40-34 — бухгалтерия</a>
+                        </div>
+                        <div class="contacts__info__item contacts__info__item_email">
+                            <a href="mailto:auk_74@gmail.ru"><span>e-mail: </span>auk_74@gmail.ru</a>
+                        </div>
+                        <div class="contacts__info__item">
+                            <div class="socials">
+                                <a href="javascript:void(0)" target="_blank">
+                                    <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2458 8.97946C11.5784 9.13714 12.3544 9.05509 12.6331 10.0165C12.8842 10.8825 12.8739 12.9537 12.6798 13.9177C12.1432 16.5836 9.8778 12.3672 9.31852 11.4409C9.02899 10.9613 8.52526 9.86737 8.30141 9.33363C7.91526 8.41267 6.98945 8.60883 5.88602 8.60883C5.47093 8.60883 5.19071 8.64682 4.79907 8.646C4.18624 8.64452 3 8.52728 3 9.09061C3 9.52157 3.24696 9.95221 3.43721 10.326L4.4623 12.3512C4.64141 12.6916 4.80572 13.0328 5.00811 13.368L5.56506 14.3367C7.03185 16.7316 8.79417 19.5407 11.4332 20.8382C13.4335 21.8216 14.375 21.8017 16.5682 21.8017C16.9096 21.8017 17.3385 21.6179 17.4571 21.3836C17.6017 21.0978 17.5869 20.6249 17.6185 20.2461C17.6959 19.3233 18.1492 18.1054 19.2452 18.8583C19.7644 19.2151 20.3953 20.0461 20.8691 20.5139C21.1259 20.7673 21.4365 21.0991 21.7249 21.2984C21.8726 21.4005 22.117 21.5478 22.2697 21.6121C23.1759 21.9936 24.2166 21.8014 25.3388 21.8017C25.9616 21.8019 27.0473 21.9035 27.5723 21.5641C28.4046 21.0259 27.5723 20.0642 27.1005 19.467C26.8309 19.126 25.791 18.0368 25.4228 17.7162C23.0126 15.6177 23.4949 15.9579 25.9921 12.6641C26.5159 11.973 27.925 10.1622 27.925 9.20176C27.925 8.69828 27.3854 8.6552 26.9814 8.61278C26.7737 8.59108 26.716 8.64468 26.5023 8.64731C25.8384 8.65553 22.8152 8.57546 22.437 8.70437C22.1927 8.78773 22.0539 9.03618 21.9546 9.26507C21.3928 10.5585 21.0098 11.4492 20.2042 12.6487C19.8781 13.1342 18.8336 14.7606 18.1798 14.7606C17.7115 14.7606 17.5427 13.8383 17.5427 13.3894C17.5427 12.028 17.6177 10.7859 17.6177 9.46123C17.6177 9.17924 17.556 8.88359 17.4622 8.68842C17.0526 7.83569 14.822 8.01591 13.7946 8.01591C13.0525 8.01591 11.8561 8.09187 11.3942 8.68135C11.3223 8.77326 11.2591 8.82243 11.2458 8.97946Z" fill="#2069E7"/>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" target="_blank">
+                                    <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.2782 9.3561C11.488 9.36469 11.7201 9.37452 11.9406 9.86474C12.0913 10.1999 12.3449 10.8246 12.547 11.3225C12.6959 11.6894 12.8169 11.9874 12.8481 12.0499C12.9217 12.1971 12.9708 12.369 12.8727 12.5656C12.858 12.595 12.8444 12.6227 12.8314 12.6492C12.7576 12.7997 12.7035 12.9103 12.5786 13.0565C12.5296 13.1136 12.479 13.1752 12.4284 13.2368C12.3268 13.3604 12.2252 13.484 12.1369 13.572C11.9893 13.7188 11.8359 13.8783 12.0076 14.1727C12.1794 14.4674 12.7702 15.431 13.6454 16.2113C14.5855 17.0495 15.4022 17.404 15.817 17.5841C15.8984 17.6194 15.9644 17.6481 16.0127 17.6723C16.3071 17.8195 16.4789 17.795 16.6506 17.5983C16.8224 17.402 17.3862 16.739 17.5825 16.4446C17.7788 16.1499 17.9751 16.199 18.2449 16.2971C18.5148 16.3952 19.9621 17.1075 20.2566 17.2547C20.314 17.2834 20.3676 17.3093 20.4174 17.3334C20.6228 17.4325 20.7616 17.4995 20.8208 17.5983C20.8944 17.7214 20.8944 18.3105 20.6491 18.9979C20.4038 19.6853 19.2018 20.3482 18.6621 20.3973C18.6101 20.402 18.5585 20.4081 18.5054 20.4143C18.0066 20.473 17.3769 20.547 15.1294 19.6608C12.364 18.5702 10.5405 15.8676 10.1638 15.3093C10.1329 15.2635 10.1118 15.2321 10.1006 15.2173L10.0973 15.2129C9.9386 15.0007 8.89856 13.6108 8.89856 12.1726C8.89856 10.8169 9.56496 10.1062 9.87157 9.77926C9.89252 9.75692 9.91179 9.73637 9.92906 9.71753C10.1987 9.42293 10.5177 9.34921 10.714 9.34921C10.7247 9.34921 10.7355 9.34921 10.7463 9.34921C10.9316 9.34918 11.116 9.34916 11.2782 9.3561Z" fill="#32CC65"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.68759 20.6603C3.64176 18.8776 3.09508 16.8572 3.09508 14.7656C3.09508 8.27669 8.39553 3 14.8844 3C18.0457 3 20.993 4.23598 23.2273 6.44648C25.4378 8.68076 26.6738 11.6281 26.6738 14.7894C26.6738 21.2783 21.3733 26.5549 14.8844 26.5549C12.9116 26.5549 10.9626 26.0796 9.25121 25.1288L3 26.7689L4.68759 20.6603ZM6.5891 19.9947L6.82679 20.3513L5.82849 23.9641L9.53644 22.9896L9.89297 23.2035C11.3904 24.1067 13.1255 24.5821 14.8844 24.5821C20.28 24.5821 24.6772 20.1849 24.6772 14.7894C24.6772 12.1748 23.6551 9.70282 21.8012 7.84885C19.971 6.01865 17.499 4.99658 14.8844 4.99658C9.4889 4.99658 5.09166 9.37005 5.09166 14.7894C5.09166 16.6196 5.61457 18.426 6.5891 19.9947Z" fill="#32CC65"/>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" target="_blank">
+                                    <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M26.6738 14.8369C26.6738 21.3742 21.3742 26.6738 14.8369 26.6738C8.29956 26.6738 3 21.3742 3 14.8369C3 8.29956 8.29956 3 14.8369 3C21.3742 3 26.6738 8.29956 26.6738 14.8369ZM15.2611 11.7385C14.1097 12.2174 11.8087 13.2085 8.35805 14.7119C7.79771 14.9348 7.50418 15.1528 7.47746 15.3659C7.4323 15.7261 7.88341 15.868 8.4977 16.0612C8.58126 16.0874 8.66784 16.1147 8.7566 16.1435C9.36098 16.34 10.174 16.5698 10.5966 16.5789C10.98 16.5872 11.4079 16.4292 11.8803 16.1048C15.1044 13.9284 16.7686 12.8284 16.8731 12.8047C16.9468 12.7879 17.049 12.7669 17.1182 12.8284C17.1874 12.8899 17.1806 13.0064 17.1733 13.0377C17.1286 13.2282 15.3578 14.8745 14.4415 15.7264C14.1558 15.992 13.9531 16.1804 13.9117 16.2234C13.8189 16.3198 13.7243 16.411 13.6334 16.4986C13.072 17.0399 12.6509 17.4458 13.6568 18.1086C14.1401 18.4271 14.5269 18.6905 14.9127 18.9533C15.3342 19.2403 15.7545 19.5265 16.2984 19.883C16.4369 19.9739 16.5692 20.0682 16.6981 20.1601C17.1885 20.5097 17.6292 20.8238 18.1735 20.7737C18.4898 20.7446 18.8165 20.4472 18.9824 19.5602C19.3746 17.4638 20.1454 12.9217 20.3235 11.05C20.3391 10.8861 20.3195 10.6762 20.3037 10.5841C20.2879 10.4919 20.255 10.3607 20.1352 10.2635C19.9934 10.1484 19.7745 10.1242 19.6766 10.1259C19.2313 10.1337 18.5483 10.3712 15.2611 11.7385Z" fill="#2FA2E4"/>
+                                    </svg>
+                                </a>
                             </div>
                         </div>
+                        <div class="contacts__info__item contacts__info__item_schedule">
+                            <span>График работ:</span>
+                            <table>
+                                <tr>
+                                    <td>Понедельник</td>
+                                    <td>с 8:00 до 17:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Вторник</td>
+                                    <td>с 8:00 до 17:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Среда</td>
+                                    <td>с 8:00 до 17:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Четверг</td>
+                                    <td>с 8:00 до 17:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Пятница</td>
+                                    <td>с 8:00 до 15:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Суббота</td>
+                                    <td><span>выходной</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Воскресенье</td>
+                                    <td><span>выходной</span></td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
-                    <div class="slider-progressbar"></div>
-                    <div class="why__slider__arrows">
-                        <div class="slider-arrow slider-arrow-prev"></div>
-                        <div class="slider-arrow slider-arrow-next"></div>
+                    <div class="map contacts__map">
+                        <img src="images/map.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -318,15 +277,6 @@
                             <span>написать в Telegram</span>
                         </a>
                     </div>
-                </div>
-            </div>
-        </section>
-        <section class="licenses">
-            <div class="container licenses__wrapper">
-                <div class="licenses__content">
-                    <h2>ЛИЦЕНЗИИ И УДОСТОВЕРЕНИЯ</h2>
-                    <p>Лицензии, Удостоверения, Сертификаты и Заключения – это неотъемлемая часть деятельности Автомобильного учебного комбината, который гордится своей репутацией и стремится предоставлять самое высокое качество услуг. Мы верим, что официальные документы дающие право заниматься определенными видами деятельности – это не просто бумажная формальность, а важное подтверждение нашей компетентности и надежности!</p>
-                    <a href="javascript:void(0)" class="btn">подробнее</a>
                 </div>
             </div>
         </section>
@@ -386,7 +336,7 @@
                         <li><a href="promotions.html">Акции и скидки</a></li>
                         <li><a href="reviews.html">Отзывы</a></li>
                         <li><a href="javascript:void(0)" class="highlight">ОПЛАТИТЬ ОБУЧЕНИЕ</a></li>
-                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="contacts.html" class="active">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="socials">

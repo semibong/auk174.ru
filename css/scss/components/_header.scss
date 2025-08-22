@@ -54,7 +54,7 @@
                         font-size: 1.6rem;
                         color: #74684A;
 
-                        &:hover {
+                        &.active, &:hover {
                             color: $color-active-secondary;
                         }
                     }

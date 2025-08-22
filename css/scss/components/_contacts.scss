@@ -1,0 +1,205 @@
+.contacts {
+    margin-bottom: 10rem;
+
+    @media #{$lg} {
+        margin-bottom: 5rem;
+    }
+
+    &__wrapper {
+        background-color: rgba(#fff, 0.3);
+        box-sizing: border-box;
+        padding: 3rem 2rem 8.8rem 3rem;
+        border-radius: 2rem;
+
+        @media #{$lg} {
+            padding: 2rem 1rem 0;
+            border-radius: 2rem 2rem 0 0;
+        }
+
+        h2 {
+            color: $color-primary;
+            margin-bottom: 2.5rem;
+
+            @media #{$lg} {
+                text-wrap: balance;
+                margin-bottom: 2rem;
+            }
+
+            &, span {
+                font-weight: 400;
+                font-size: 2.5rem;
+                line-height: 2.5rem;
+
+                @media #{$lg} {
+                    font-size: 2rem;
+                    line-height: 2rem;
+                }
+            }
+
+            span {
+                color: $color-active;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+
+        @media #{$lg} {
+            flex-direction: column;
+            gap: 2.5rem;
+        }
+    }
+
+    &__info {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 27.8rem;
+            height: 44.6rem;
+            background: url(../images/contacts-decor.png) no-repeat center / contain;
+            pointer-events: none;
+            right: 0;
+            bottom: -3.5rem;
+
+            @media #{$lg} {
+                content: none;
+            }
+        }
+
+        &__item {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding-left: 3.5rem;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 2.4rem;
+                height: 2.4rem;
+                pointer-events: none;
+                top: 0;
+                left: 0;
+            }
+
+            &>span {
+                font-family: $font-second;
+                font-weight: 500;
+                font-size: 1.8rem;
+                line-height: 2.2rem;
+                color: #667989;
+                margin-bottom: 1.2rem;
+            }
+
+            &>a {
+                font-family: $font-second;
+                font-weight: 500;
+                font-size: 1.6rem;
+                line-height: 2.5rem;
+                color: #000;
+
+                &:hover {
+                    color: $color-active;
+                }
+            }
+
+            &>table {
+                td {
+                    width: 10.7rem;
+                    color: #000;
+
+                    &, span {
+                        font-family: $font-second;
+                        font-weight: 500;
+                        font-size: 1.6rem;
+                        line-height: 2rem;
+                    }
+
+                    span {
+                        color: $color-active;
+                    }
+                }
+            }
+
+            &_address {
+                &::before {
+                    background: url(../images/svg/address-icon.svg) no-repeat center / contain;
+                }
+
+                &>a {
+                    font-weight: 600;
+                    font-size: 1.8rem;
+                    line-height: 1.8rem;
+                }
+            }
+
+            &_phone {
+                &::before {
+                    background: url(../images/svg/phone-contacts-icon.svg) no-repeat center / contain;
+                }
+            }
+
+            &_email {
+                &::before {
+                    background: url(../images/svg/email-icon.svg) no-repeat center / contain;
+                }
+                
+                &>a {
+                    &, span {
+                        font-size: 1.8rem;
+                    }
+
+                    span {
+                        font-family: $font-second;
+                        color: #667989;
+                    }
+                }
+            }
+
+            &_schedule {
+                &::before {
+                    background: url(../images/svg/schedule-icon.svg) no-repeat center / contain;
+                }
+
+                &>table {
+                    width: 24rem;
+                }
+            }
+
+            .socials {
+                a {
+                    &:hover {
+                        svg path {
+                            fill: revert-layer;
+                        }
+                    }
+
+                    svg path {
+                        fill: #899198;
+                    }
+                }
+            }
+        }
+    }
+
+    &__map {
+        flex-shrink: 0;
+        max-width: 76.4rem;
+        height: 47.7rem;
+        margin-bottom: 0;
+
+        @media #{$lg} {
+            width: calc(100% + 2rem);
+            height: auto;
+            margin: 0 0 -2.5rem -1rem;
+        }
+    }
+}
