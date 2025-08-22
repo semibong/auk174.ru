@@ -3771,4 +3771,402 @@ a:hover {
     line-height: 1.4rem;
     margin-top: 0.3rem;
   }
+}
+
+.legals {
+  margin-bottom: 7rem;
+}
+@media (max-width: 992px) {
+  .legals {
+    margin-bottom: 5rem;
+  }
+}
+.legals__content {
+  padding-left: 2rem;
+}
+@media (max-width: 992px) {
+  .legals__content {
+    padding-left: 0;
+  }
+}
+.legals__content h2, .legals__content h3 {
+  color: #132843;
+}
+.legals__content h2 span, .legals__content h3 span {
+  color: #C31E2A;
+}
+.legals__content h2, .legals__content h2 span {
+  font-family: "Stengazeta", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 2.5rem;
+}
+@media (max-width: 992px) {
+  .legals__content h2, .legals__content h2 span {
+    font-size: 2.5rem;
+  }
+}
+.legals__content h3, .legals__content h3 span {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2rem;
+}
+@media (max-width: 992px) {
+  .legals__content h3, .legals__content h3 span {
+    line-height: 1.8rem;
+  }
+}
+.legals__content, .legals__content p, .legals__content a:not(.btn, .legals__link), .legals__content li, .legals__content span {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #132843;
+}
+@media (max-width: 992px) {
+  .legals__content, .legals__content p, .legals__content a:not(.btn, .legals__link), .legals__content li, .legals__content span {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+}
+.legals__content b {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 2rem;
+}
+@media (max-width: 992px) {
+  .legals__content b {
+    line-height: 1.8rem;
+  }
+}
+.legals__content p, .legals__content ul, .legals__content ol, .legals__content h2, .legals__content h3 {
+  margin-bottom: 2.2rem;
+}
+@media (max-width: 992px) {
+  .legals__content p, .legals__content ul, .legals__content ol, .legals__content h2, .legals__content h3 {
+    margin-bottom: 1.2rem;
+  }
+}
+.legals__content p > span {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: #C31E2A;
+}
+@media (max-width: 992px) {
+  .legals__content p > span {
+    line-height: 1.8rem;
+  }
+}
+.legals__content a:not(.btn, .legals__link) {
+  color: #C31E2A;
+}
+.legals__content a:not(.btn, .legals__link):hover {
+  color: #FFC935;
+}
+.legals__content ul, .legals__content ol {
+  padding-left: 2rem;
+}
+.legals__content ul {
+  list-style: disc;
+}
+.legals__link:hover {
+  color: #132843;
+}
+.legals__link:hover span {
+  color: #C31E2A;
+}
+.legals__link, .legals__link span {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: #132843;
+}
+@media (max-width: 992px) {
+  .legals__link, .legals__link span {
+    line-height: 1.8rem;
+  }
+}
+.legals__link span {
+  transition: all 0.1s linear;
+}
+
+.legals-order {
+  margin-bottom: 3.5rem;
+}
+@media (max-width: 992px) {
+  .legals-order {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 992px) {
+  .legals-order__wrapper {
+    width: 100%;
+    margin: 0;
+  }
+}
+.legals-order h2 {
+  font-weight: 400;
+  font-size: 5rem;
+  line-height: 100%;
+  color: #132843;
+  padding-left: 2rem;
+}
+@media (max-width: 992px) {
+  .legals-order h2 {
+    font-size: 3rem;
+    padding-left: 1.4rem;
+    margin-bottom: 0.7rem;
+  }
+}
+.legals-order__content {
+  position: relative;
+  min-height: 46.5rem;
+  background: url(../images/legals-order-bg.png) no-repeat right bottom/cover;
+  box-sizing: border-box;
+  padding: 5rem 0 5rem 6.5rem;
+  border-radius: 2rem;
+}
+@media (max-width: 992px) {
+  .legals-order__content {
+    min-height: 91rem;
+    background: url(../images/legals-order-bg-mob.png) no-repeat top center/cover;
+    padding: 14rem 1.4rem 0;
+  }
+}
+.legals-order__content::before {
+  content: "";
+  position: absolute;
+  width: 41.3rem;
+  height: 40.4rem;
+  background: url(../images/legals-order-img.png) no-repeat center/contain;
+  top: -6rem;
+  right: 10rem;
+}
+@media (max-width: 992px) {
+  .legals-order__content::before {
+    width: 37.5rem;
+    height: 31rem;
+    background: url(../images/legals-order-img-mob.png) no-repeat center/contain;
+    top: auto;
+    right: auto;
+    left: 0;
+    bottom: 7rem;
+  }
+}
+.legals-order__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 72.2rem;
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .legals-order__form {
+    max-width: none;
+  }
+}
+.legals-order__form__input {
+  position: relative;
+}
+.legals-order__form__input input:focus + label {
+  opacity: 0;
+}
+.legals-order__form__input input[type=tel]:hover + label {
+  opacity: 0;
+}
+.legals-order__form__input input[type=file] {
+  width: 37.3rem;
+  cursor: pointer;
+  padding: 0;
+  opacity: 0;
+}
+@media (max-width: 992px) {
+  .legals-order__form__input input[type=file] {
+    width: 100%;
+  }
+}
+.legals-order__form__input input[type=file]:hover + label {
+  color: #C31E2A;
+}
+.legals-order__form__input input[type=file]::-webkit-file-upload-button {
+  cursor: pointer;
+}
+@media (max-width: 992px) {
+  .legals-order__form__input:has(> input[type=file]) {
+    width: 100%;
+  }
+}
+.legals-order__form__input input[type=file] + label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 6rem;
+  display: inline-block;
+  width: 37.3rem;
+  height: 6rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  padding-left: 6.7rem;
+  padding-right: 2rem;
+  border-radius: 6rem;
+  opacity: 1;
+  left: 0;
+}
+@media (max-width: 992px) {
+  .legals-order__form__input input[type=file] + label {
+    width: 100%;
+    padding-left: 5rem;
+    padding-right: 1rem;
+  }
+}
+.legals-order__form__input input[type=file] + label::before {
+  content: "";
+  position: absolute;
+  width: 1.9rem;
+  height: 1.9rem;
+  background: url(../images/svg/file-icon.svg) no-repeat center/contain;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 3.4rem;
+}
+@media (max-width: 992px) {
+  .legals-order__form__input input[type=file] + label::before {
+    left: 2.8rem;
+  }
+}
+.legals-order__form__input label {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #132843;
+  position: absolute;
+  pointer-events: none;
+  transition: all 0.1s linear;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 2.8rem;
+}
+.legals-order__form__input label.invisible {
+  opacity: 0;
+}
+.legals-order__form__input label sup {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: #C31E2A;
+  top: 0.2rem;
+}
+.legals-order__form__input-box {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+@media (max-width: 992px) {
+  .legals-order__form__input-box {
+    flex-direction: column;
+    align-items: start;
+    gap: 1.3rem;
+  }
+}
+.legals-order__form input {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #132843;
+  width: 100%;
+  height: 6rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  padding: 0 2.8rem;
+  border: none;
+  border-radius: 6rem;
+}
+.legals-order__form__notation {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  color: #132843;
+  padding-left: 3.5rem;
+  margin-top: 1rem;
+}
+@media (max-width: 992px) {
+  .legals-order__form__notation {
+    padding-left: 0;
+    margin-top: 0.6rem;
+  }
+}
+.legals-order__form__notation sup {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: #C31E2A;
+  top: 0.2rem;
+}
+.legals-order__form__checkbox {
+  max-width: 62rem;
+}
+.legals-order__form__checkbox input {
+  display: none;
+}
+.legals-order__form__checkbox input:checked + label::before {
+  opacity: 0;
+}
+.legals-order__form__checkbox input:checked + label::after {
+  opacity: 1;
+}
+.legals-order__form__checkbox label {
+  position: relative;
+  display: inline-block;
+  padding-left: 6.2rem;
+  cursor: pointer;
+}
+@media (max-width: 992px) {
+  .legals-order__form__checkbox label {
+    padding-left: 3rem;
+  }
+}
+.legals-order__form__checkbox label::before, .legals-order__form__checkbox label::after {
+  content: "";
+  position: absolute;
+  width: 1.8rem;
+  height: 1.8rem;
+  transition: all 0.1s linear;
+  top: 0;
+  left: 3.2rem;
+}
+@media (max-width: 992px) {
+  .legals-order__form__checkbox label::before, .legals-order__form__checkbox label::after {
+    left: 0;
+  }
+}
+.legals-order__form__checkbox label::before {
+  background: url(../images/svg/legals-order-checkbox.svg) no-repeat center/contain;
+}
+.legals-order__form__checkbox label::after {
+  background: url(../images/svg/legals-order-checkbox-active.svg) no-repeat center/contain;
+  opacity: 0;
+}
+.legals-order__form__checkbox label, .legals-order__form__checkbox label a {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  color: #132843;
+}
+@media (max-width: 992px) {
+  .legals-order__form__checkbox label, .legals-order__form__checkbox label a {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+}
+.legals-order__form__checkbox label a {
+  text-decoration: underline;
+}
+.legals-order__form__checkbox label a:hover {
+  color: #C31E2A;
 }/*# sourceMappingURL=style.css.map */

@@ -177,4 +177,23 @@ $(document).ready(function () {
             }
         });
     }
+
+    if ($('.legals-order').length) {
+        $('.legals-order__form__input>input').on('input', function () {
+            if ($(this).val()) {
+                $(this).next().addClass('invisible');
+            } else {
+                $(this).next().removeClass('invisible');
+            }
+        });
+
+        let fileText = $('.legals-order__form__input>input[type=file] + label').text();
+        $('.legals-order__form__input>input[type=file]').on('change', function () {
+            if ($(this).val()) {
+                $(this).next().text($(this).val());
+            } else {
+                $(this).next().text(fileText);
+            }
+        });
+    }
 });

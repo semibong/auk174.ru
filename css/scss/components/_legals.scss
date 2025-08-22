@@ -1,0 +1,134 @@
+.legals {
+    margin-bottom: 7rem;
+
+    @media #{$lg} {
+        margin-bottom: 5rem;
+    }
+
+    &__content {
+        padding-left: 2rem;
+
+        @media #{$lg} {
+            padding-left: 0;
+        }
+
+        h2, h3 {
+            color: $color-primary;
+
+            span {
+                color: $color-active;
+            }
+        }
+
+        h2 {
+            &, span {
+                font-family: $font-main;
+                font-weight: 400; 
+                font-size: 3rem;
+                line-height: 2.5rem;
+
+                @media #{$lg} {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+
+        h3 {
+            &, span {
+                font-family: $font-second;
+                font-weight: 600;
+                font-size: 1.8rem;
+                line-height: 2rem;
+
+                @media #{$lg} {
+                    line-height: 1.8rem;
+                }
+            }
+        }
+
+        &, p, a:not(.btn, .legals__link), li, span {
+            font-family: $font-second;
+            font-weight: 500;
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+            color: $color-primary;
+
+            @media #{$lg} {
+                font-size: 1.4rem;
+                line-height: 1.8rem;
+            }
+        }
+
+        b {
+            font-family: $font-second;
+            font-size: 1.8rem;
+            line-height: 2rem;
+
+            @media #{$lg} {
+                line-height: 1.8rem;
+            }
+        }
+
+        p, ul, ol, h2, h3 {
+            margin-bottom: 2.2rem;
+
+            @media #{$lg} {
+                margin-bottom: 1.2rem;
+            }
+        }
+
+        p>span {
+            font-family: $font-second;
+            font-weight: 500;
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+            color: $color-active;
+
+            @media #{$lg} {
+                line-height: 1.8rem;
+            }
+        }
+
+        a:not(.btn, .legals__link) {
+            color: $color-active;
+
+            &:hover {
+                color: $color-active-secondary;
+            }
+        }
+
+        ul, ol {
+            padding-left: 2rem;
+        }
+
+        ul {
+            list-style: disc;
+        }
+    }
+
+    &__link {
+        &:hover {
+            color: $color-primary;
+
+            span {
+                color: $color-active;
+            }
+        }
+
+        &, span {
+            font-family: $font-second;
+            font-weight: 500;
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+            color: $color-primary;
+
+            @media #{$lg} {
+                line-height: 1.8rem;
+            }
+        }
+
+        span {
+            transition: all .1s linear;
+        }
+    }
+}
