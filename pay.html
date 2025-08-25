@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="js/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="js/fancybox/fancybox.css">
+    <link rel="stylesheet" href="js/select2/select2.min.css">
     <link rel="stylesheet" href="js/bvi/bvi.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -58,12 +59,12 @@
                 <ul>
                     <div class="menu__li-group">
                         <li><a href="about.html">О нас</a></li>
-                        <li><a href="services.html" class="active">услуги</a></li>
+                        <li><a href="services.html">услуги</a></li>
                         <li><a href="promotions.html">акции и скидки</a></li>
                     </div>
                     <div class="menu__li-group">
                         <li><a href="reviews.html">отзывы</a></li>
-                        <li><a href="pay.html" class="highlight">ОПЛАТИТЬ ОБУЧЕНИЕ</a></li>
+                        <li><a href="pay.html" class="highlight active">ОПЛАТИТЬ ОБУЧЕНИЕ</a></li>
                         <li><a href="contacts.html">Контакты</a></li>
                     </div>
                 </ul>
@@ -85,10 +86,10 @@
             <nav class="menu header-fixed__menu">
                 <ul>
                     <li><a href="about.html">О нас</a></li>
-                    <li><a href="services.html" class="active">Услуги</a></li>
+                    <li><a href="services.html">Услуги</a></li>
                     <li><a href="reviews.html">Отзывы</a></li>
                     <li><a href="promotions.html">Акции и скидки</a></li>
-                    <li><a href="pay.html">ОПЛАТИТЬ ОБУЧЕНИЕ</a></li>
+                    <li><a href="pay.html" class="active">ОПЛАТИТЬ ОБУЧЕНИЕ</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
                 </ul>
             </nav>
@@ -117,10 +118,10 @@
             <nav class="menu burger__menu">
                 <ul>
                     <li><a href="about.html">О нас</a></li>
-                    <li><a href="services.html" class="active">услуги</a></li>
+                    <li><a href="services.html">услуги</a></li>
                     <li><a href="promotions.html">акции и скидки</a></li>
                     <li><a href="reviews.html">отзывы</a></li>
-                    <li><a href="pay.html">ОПЛАТИТЬ ОБУЧЕНИЕ</a></li>
+                    <li><a href="pay.html" class="active">ОПЛАТИТЬ ОБУЧЕНИЕ</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
                 </ul>
             </nav>
@@ -161,119 +162,73 @@
                     <i>&nbsp;>&nbsp;</i>
                 </div>
                 <div class="breadcrumb__item">
-                    <span>Услуги</span>
+                    <span>Оплатить обучение</span>
                 </div>
             </div>
         </div>
-        <section class="services">
-            <h1 class="title">Наши услуги</h1>
-            <div class="container services__content">
-                <div class="services__item">
-                    <a href="service.html"></a>
-                    <div class="services__item__image"><img src="images/services-img-1.jpg" alt=""></div>
-                    <div class="services__item__content">
-                        <div class="services__item__info">
-                            <h3>Обучение на категорию «В»</h3>
-                            <p>АУК одно из ведущих учебных заведений Челябинска и Челябинской области, осуществляющих подготовку водителей категории В. Опытные наставники, оборудованные классы, а также многолетний опыт обучения . . . </p>
+        <section class="pay">
+            <h1 class="title">Оплатить обучение</h1>
+            <div class="container pay__content">
+                <h2>3 простых шага</h2>
+                <form method="post" class="form pay__form">
+                    <div class="pay__step">
+                        <div class="pay__step__title">
+                            <span>01</span>
+                            Заполните форму
                         </div>
-                        <div class="services__item__rate">
-                            <p class="services__item__term">3-3,5 месяца</p>
-                            <div class="services__item__price">35 000 руб.</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="services__item">
-                    <a href="service.html"></a>
-                    <div class="services__item__image"><img src="images/services-img-2.jpg" alt=""></div>
-                    <div class="services__item__content">
-                        <div class="services__item__info">
-                            <h3>Обучение водителей ДОПОГ</h3>
-                            <p>В соответствии с п. 3 Постановления правительства РФ от 15 апреля 2011 г. № 272 «Об утверждении правил перевозки грузов автомобильным транспортом», перевозка опасных грузов автомобильным транспортом в городском . . . </p>
-                        </div>
-                        <div class="services__item__rate">
-                            <p class="services__item__term">от 28 часов</p>
-                            <div class="services__item__price">5 000 руб.</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="services__item">
-                    <a href="service.html"></a>
-                    <div class="services__item__image"><img src="images/services-img-3.jpg" alt=""></div>
-                    <div class="services__item__content">
-                        <div class="services__item__info">
-                            <h3>Обучение специалистов, ответственных за бдд</h3>
-                            <p>Обучению и аттестации по курсу подлежат специалисты юридических лиц и индивидуальных предпринимателей, отвечающие за обеспечение безопасности дорожного движения на предприятиях транспорта независимо от формы . . .</p>
-                        </div>
-                        <div class="services__item__rate">
-                            <p class="services__item__term">48 часов</p>
-                            <div class="services__item__price">6 000 руб.</div>
+                        <div class="pay__step__content">
+                            <div class="form__input">
+                                <input type="text" name="pay-name" id="pay-name">
+                                <label for="pay-name">Ваше имя</label>
+                            </div>
+                            <div class="form__input">
+                                <input type="tel" name="pay-phone" id="pay-phone">
+                                <label for="pay-phone">Ваш телефон<sup>*</sup></label>
+                            </div>
+                            <div class="form__input">
+                                <input type="email" name="pay-email" id="pay-email">
+                                <label for="pay-email">Адрес электронной почты<sup>*</sup></label>
+                            </div>
+                            <button type="submit" class="btn">отправить</button>
+                            <div class="form__notation"><sup>*</sup> - обязательные к заполнению поля</div>
+                            <div class="form__checkbox">
+                                <input type="checkbox" name="pay-agree" id="pay-agree">
+                                <label for="pay-agree">Я даю согласие на обработку персональных данных согласно <a href="javascript:void(0)" target="_blank">пользовательскому соглашению</a> и <a href="javascript:void(0)" target="_blank">политике обработки персональных данных</a> сайта.</label>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="services__item">
-                    <a href="service.html"></a>
-                    <div class="services__item__image"><img src="images/services-img-4.jpg" alt=""></div>
-                    <div class="services__item__content">
-                        <div class="services__item__info">
-                            <h3>Обучение контролеров технического состояния автотранспорта</h3>
-                            <p>Контролеров технического состояния автотранспортных средств Специалистов ответственных за обеспечение безопасности дорожного движения Подготовка консультантов ДОПОГ (консультант по вопросам . . . </p>
+                    <div class="pay__step">
+                        <div class="pay__step__title">
+                            <span>02</span>
+                            Выбрать услугу
                         </div>
-                        <div class="services__item__rate">
-                            <p class="services__item__term">от 250 часов</p>
-                            <div class="services__item__price">11 000 руб.</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="services__item">
-                    <a href="service.html"></a>
-                    <div class="services__item__image"><img src="images/services-img-5.jpg" alt=""></div>
-                    <div class="services__item__content">
-                        <div class="services__item__info">
-                            <h3>Диспетчер автомобильного и городского наземного электрического транспорта</h3>
-                            <p>Заниматься организацией перевозочного процесса, правильно оформлять транспортную документацию, координировать работу автотранспортных средств, предотвращать сбои транспортных процессов . . . </p>
-                        </div>
-                        <div class="services__item__rate">
-                            <p class="services__item__term">3-3,5 месяца</p>
-                            <div class="services__item__price">35 000 руб.</div>
+                        <div class="pay__step__content">
+                            <div class="form__select">
+                                <select name="pay-service" id="pay-service">
+                                    <option></option>
+                                    <option value="1">услуга 1</option>
+                                    <option value="2">услуга 2</option>
+                                    <option value="3">услуга 3</option>
+                                </select>
+                            </div>
+                            <div class="form__input">
+                                <input type="number" name="pay-price" id="pay-price">
+                                <label for="pay-price">Сумма для оплаты</label>
+                            </div>
+                            <img src="images/pay-step-img-1.png" alt="">
                         </div>
                     </div>
-                </div>
-                <div class="services__item">
-                    <a href="service.html"></a>
-                    <div class="services__item__image"><img src="images/services-img-6.jpg" alt=""></div>
-                    <div class="services__item__content">
-                        <div class="services__item__info">
-                            <h3>Обучение консультантов по безопасной перевозке опасных грузов</h3>
-                            <p>Главная задача консультанта, который подотчетен в своей работе руководителю предприятия, состоит в том, чтобы с помощью всех надлежащих средств и всех надлежащих мер, в рамках соответствующей деятельности . . . </p>
+                    <div class="pay__step">
+                        <div class="pay__step__title">
+                            <span>03</span>
+                            Проверьте почту
                         </div>
-                        <div class="services__item__rate">
-                            <p class="services__item__term">от 28 часов</p>
-                            <div class="services__item__price">5 000 руб.</div>
+                        <div class="pay__step__content">
+                            <p class="pay__step__text">После <span>успешной оплаты</span> услуги, на указанную вами почту будет отправлено подтверждение</p>
+                            <img src="images/pay-step-img-2.png" alt="">
                         </div>
                     </div>
-                </div>
-                <div class="services__item">
-                    <a href="service.html"></a>
-                    <div class="services__item__image"><img src="images/services-img-7.jpg" alt=""></div>
-                    <div class="services__item__content">
-                        <div class="services__item__info">
-                            <h3>Ежегодная 20-ти часовая подготовка по БДД для водителей</h3>
-                            <p>Согласно пункта 2 Статьи 20 Федерального закона от 10 декабря 1995 г. № 196-ФЗ «О безопасности дорожного движения» юридические лица и индивидуальные предприниматели, осуществляющие на территории Российской Федерации . . .</p>
-                        </div>
-                        <div class="services__item__rate">
-                            <p class="services__item__term">25 часов</p>
-                            <div class="services__item__price">6 000 руб.</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="services__item services__item_special">
-                    <a href="promotions.html"></a>
-                    <h3>акции и скидки <span>на наши услуги</span></h3>
-                    <picture>
-                        <source media="(max-width: 576px)" srcset="images/services-img-special-mob.jpg">
-                        <img src="images/services-img-special.jpg" alt="">
-                    </picture>
-                </div>
+                </form>
             </div>
         </section>
         <section class="consultation">
@@ -365,10 +320,10 @@
                 <nav class="menu">
                     <ul>
                         <li><a href="about.html">О нас</a></li>
-                        <li><a href="services.html" class="active">Услуги</a></li>
+                        <li><a href="services.html">Услуги</a></li>
                         <li><a href="promotions.html">Акции и скидки</a></li>
                         <li><a href="reviews.html">Отзывы</a></li>
-                        <li><a href="pay.html" class="highlight">ОПЛАТИТЬ ОБУЧЕНИЕ</a></li>
+                        <li><a href="pay.html" class="highlight active">ОПЛАТИТЬ ОБУЧЕНИЕ</a></li>
                         <li><a href="contacts.html">Контакты</a></li>
                     </ul>
                 </nav>
@@ -462,6 +417,7 @@
     <script src="js/jquery/jquery.form.min.js"></script>
     <script src="js/swiper/swiper-bundle.js"></script>
     <script src="js/fancybox/fancybox.umd.js"></script>
+    <script src="js/select2/select2.min.js"></script>
     <script src="js/bvi/bvi.js"></script>
     <script src="js/index.js"></script>
 </body>

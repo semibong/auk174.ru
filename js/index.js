@@ -178,8 +178,8 @@ $(document).ready(function () {
         });
     }
 
-    if ($('.legals-order').length) {
-        $('.legals-order__form__input>input').on('input', function () {
+    if ($('.form').length) {
+        $('.form__input>input').on('input', function () {
             if ($(this).val()) {
                 $(this).next().addClass('invisible');
             } else {
@@ -187,13 +187,23 @@ $(document).ready(function () {
             }
         });
 
-        let fileText = $('.legals-order__form__input>input[type=file] + label').text();
-        $('.legals-order__form__input>input[type=file]').on('change', function () {
+        let fileText = $('.form__input>input[type=file] + label').text();
+        $('.form__input>input[type=file]').on('change', function () {
             if ($(this).val()) {
                 $(this).next().text($(this).val());
             } else {
                 $(this).next().text(fileText);
             }
+        });
+
+        $('.form select').select2({
+            width: 'element'
+        });
+    }
+
+    if ($('.pay').length) {
+        $('.pay__form select').select2({
+            placeholder: 'Выбрать услугу'
         });
     }
 });

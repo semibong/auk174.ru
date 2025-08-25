@@ -72,225 +72,60 @@
             max-width: none;
         }
 
-        &__input {
-            position: relative;
+        .form {
+            &__input {
+                input[type=file] + label {
+                    @media #{$lg} {
+                        line-height: 6rem;
+                        height: 6rem;
+                        padding-left: 5rem;
+                    }
 
-            input:focus + label {
-                opacity: 0;
-            }
-
-            input[type=tel]:hover + label {
-                opacity: 0;
-            }
-
-            input[type=file] {
-                width: 37.3rem;
-                cursor: pointer;
-                padding: 0;
-                opacity: 0;
-
-                @media #{$lg} {
-                    width: 100%;
+                    &::before {
+                        @media #{$lg} {
+                            left: 2.8rem;
+                        }
+                    }
                 }
 
-                &:hover + label {
-                    color: $color-active;
-                }
-
-                &::-webkit-file-upload-button {
-                    cursor: pointer;
-                }
-            }
-
-            &:has(>input[type=file]) {
-                @media #{$lg} {
-                    width: 100%;
-                }
-            }
-
-            input[type=file] + label {
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                line-height: 6rem;
-                display: inline-block;
-                width: 37.3rem;
-                height: 6rem;
-                background-color: rgba(#fff, 0.5);
-                box-sizing: border-box;
-                padding-left: 6.7rem;
-                padding-right: 2rem;
-                border-radius: 6rem;
-                opacity: 1;
-                left: 0;
-
-                @media #{$lg} {
-                    width: 100%;
-                    padding-left: 5rem;
-                    padding-right: 1rem;
-                }
-
-                &::before {
-                    content: '';
-                    position: absolute;
-                    width: 1.9rem;
-                    height: 1.9rem;
-                    background: url(../images/svg/file-icon.svg) no-repeat center / contain;
-                    transform: translateY(-50%);
-                    top: 50%;
-                    left: 3.4rem;
-
+                label {
                     @media #{$lg} {
                         left: 2.8rem;
                     }
                 }
             }
 
-            label {
-                font-family: $font-second;
-                font-weight: 500;
-                font-size: 1.6rem;
-                color: $color-primary;
-                position: absolute;
-                pointer-events: none;
-                transition: all .1s linear;
-                transform: translateY(-50%);
-                top: 50%;
-                left: 2.8rem;
+            &__notation {
+                padding-left: 3.5rem;
 
-                &.invisible {
-                    opacity: 0;
-                }
-
-                sup {
-                    font-family: $font-second;
-                    font-weight: 400;
-                    font-size: 2.5rem;
-                    color: $color-active;
-                    top: 0.2rem;
+                @media #{$lg} {
+                    padding-left: 0;
                 }
             }
 
-            &-box {
-                display: flex;
-                align-items: center;
-                gap: 1.6rem;
+            &__checkbox {
+                label {
+                    padding-left: 6.2rem;
+                    
+                    @media #{$lg} {
+                        padding-left: 3rem;
+                    }
 
-                @media #{$lg} {
-                    flex-direction: column;
-                    align-items: start;
-                    gap: 1.3rem;
+                    &::before, &::after {
+                        left: 3.2rem;
+
+                        @media #{$lg} {
+                            left: 0;
+                        }
+                    }
                 }
             }
         }
 
         input {
-            font-family: $font-second;
-            font-weight: 500;
-            font-size: 1.6rem;
-            color: $color-primary;
-            width: 100%;
-            height: 6rem;
-            background-color: rgba(#fff, 0.5);
-            box-sizing: border-box;
-            padding: 0 2.8rem;
-            border: none;
-            border-radius: 6rem;
-        }
-
-        &__notation {
-            font-family: $font-second;
-            font-weight: 500;
-            font-size: 1.4rem;
-            line-height: 1.4rem;
-            color: $color-primary;
-            padding-left: 3.5rem;
-            margin-top: 1rem;
-
             @media #{$lg} {
-                padding-left: 0;
-                margin-top: 0.6rem;
-            }
-
-            sup {
-                font-family: $font-second;
-                font-weight: 400;
-                font-size: 2.5rem;
-                color: $color-active;
-                top: 0.2rem;
-            }
-        }
-
-        &__checkbox {
-            max-width: 62rem;
-
-            input {
-                display: none;
-
-                &:checked + label {
-                    &::before {
-                        opacity: 0;
-                    }
-
-                    &::after {
-                        opacity: 1;
-                    }
-                }
-            }
-
-            label {
-                position: relative;
-                display: inline-block;
-                padding-left: 6.2rem;
-                cursor: pointer;
-
-                @media #{$lg} {
-                    padding-left: 3rem;
-                }
-
-                &::before, &::after {
-                    content: '';
-                    position: absolute;
-                    width: 1.8rem;
-                    height: 1.8rem;
-                    transition: all .1s linear;
-                    top: 0;
-                    left: 3.2rem;
-
-                    @media #{$lg} {
-                        left: 0;
-                    }
-                }
-
-                &::before {
-                    background: url(../images/svg/legals-order-checkbox.svg) no-repeat center / contain;
-                }
-
-                &::after {
-                    background: url(../images/svg/legals-order-checkbox-active.svg) no-repeat center / contain;
-                    opacity: 0;
-                }                
-
-                &, a {
-                    font-family: $font-second;
-                    font-weight: 500;
-                    font-size: 1.4rem;
-                    line-height: 1.4rem;
-                    color: $color-primary;
-
-                    @media #{$lg} {
-                        font-size: 1.2rem;
-                        line-height: 1.2rem;
-                    }
-                }
-
-                a {
-                    text-decoration: underline;
-
-                    &:hover {
-                        color: $color-active;
-                    }
-                }
+                height: 6rem;
+                padding: 0 2.8rem;
             }
         }
     }
