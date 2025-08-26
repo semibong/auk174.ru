@@ -1968,9 +1968,9 @@ a:hover {
 }
 @media (max-width: 992px) {
   .breadcrumb {
-    height: 1.5rem;
+    height: auto;
     background-color: transparent;
-    margin-bottom: 2.7rem;
+    margin-bottom: 2.6rem;
   }
 }
 .breadcrumb::before {
@@ -1992,7 +1992,14 @@ a:hover {
   position: relative;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   height: 100%;
+}
+@media (max-width: 992px) {
+  .breadcrumb__content {
+    gap: 1.5rem 0;
+    margin-top: -0.2rem;
+  }
 }
 .breadcrumb__item a, .breadcrumb__item span, .breadcrumb__item i {
   font-family: "Gilroy", Arial, sans-serif;
