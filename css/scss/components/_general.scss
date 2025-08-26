@@ -54,7 +54,16 @@ body {
 
         main {
             @media #{$lg} {
+                min-height: calc(100dvh - 96.4rem);
                 padding-top: 11.3rem;
+            }
+
+            @media #{$md} {
+                min-height: calc(100dvh - 84.9rem);
+            }
+
+            @media #{$sm} {
+                min-height: calc(100dvh - 72.9rem);
             }
         }
     }
@@ -84,8 +93,19 @@ body {
 }
 
 main {
+    min-height: calc(100dvh - 76.4rem);
+
     @media #{$lg} {
+        min-height: calc(100dvh - 95.1rem);
         padding-top: 10rem;
+    }
+
+    @media #{$md} {
+        min-height: calc(100dvh - 83.6rem);
+    }
+
+    @media #{$sm} {
+        min-height: calc(100dvh - 71.6rem);
     }
 }
 

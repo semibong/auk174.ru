@@ -1,0 +1,138 @@
+.page-404 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8rem 0 30.5rem;
+
+    @media #{$lg} {
+        padding-top: 1.1rem;
+        margin: 0 0 26.5rem;
+    }
+
+    h1 {
+        color: #000;
+
+        @media #{$lg} {
+            margin-bottom: 2.5rem;
+        }
+
+        &, span {
+            font-weight: 400;
+            font-size: 4.5rem;
+
+            @media #{$lg} {
+                font-size: 3rem;
+                line-height: 3rem;
+            }
+        }
+
+        span {
+            color: $color-active;
+        }
+    }
+
+    &>img {
+        width: 87.5rem;
+        height: 46.4rem;
+        object-fit: contain;
+        object-position: center;
+        pointer-events: none;
+        margin-top: -6rem;
+        margin-bottom: 1.5rem;
+        transform: translateX(-6.5rem);
+
+        @media #{$lg} {
+            width: 35.5rem;
+            height: 18.8rem;
+            margin-top: 0;
+            margin-bottom: 3.5rem;
+            transform: none;
+        }
+    }
+
+    &__controls {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+
+        @media #{$lg} {
+            max-width: calc(100% - 2.8rem);
+        }
+
+        p {
+            font-family: $font-main;
+            font-weight: 400;
+            font-size: 2.5rem;
+            line-height: 5rem;
+            color: #000;
+
+            @media #{$lg} {
+                display: none;
+            }
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        width: 100%;
+
+        @media #{$lg} {
+            gap: 1.5rem;
+        }
+
+        a {
+            font-family: $font-main;
+            font-weight: 400;
+            font-size: 2rem;
+            color: #000;
+            flex-shrink: 0;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 20rem;
+            width: 100%;
+            height: 5rem;
+            box-sizing: border-box;
+            padding-top: 0.4rem;
+            border: 2px #000 solid;
+            border-radius: 5rem;
+            transition: all .1s linear;
+
+            @media #{$lg} {
+                max-width: 16.5rem;
+            }
+
+            &:hover {
+                color: $color-active;
+                border-color: $color-active;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 1.2rem;
+                height: 1.2rem;
+                background: url(../images/svg/page-404-btn-arrow.svg) no-repeat center / contain;
+                transform: translateY(-50%);
+                top: 50%;
+                right: 2rem;
+            }
+
+            &:first-of-type {
+                &::before {
+                    rotate: 180deg;
+                    transform: translateY(50%);
+                    left: 2rem;
+                    right: auto;
+                }
+            }
+        }
+    }
+}
