@@ -1242,7 +1242,7 @@ a:hover {
   justify-content: space-between;
   gap: 6rem;
   width: 100%;
-  height: calc(100vh - 6.5rem);
+  height: calc(100dvh - 6.5rem);
   background: url(../images/burger-bg.jpg) no-repeat center/cover;
   box-sizing: border-box;
   padding: 6rem 2.5rem 2.5rem;
@@ -1306,7 +1306,13 @@ a:hover {
   overflow-y: scroll;
 }
 .burger__content::-webkit-scrollbar {
-  display: none;
+  width: 0.3rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 1rem;
+}
+.burger__content::-webkit-scrollbar-thumb {
+  background-color: #C31E2A;
+  border-radius: 1rem;
 }
 .burger__menu ul {
   flex-direction: column;
@@ -2246,6 +2252,7 @@ a:hover {
 }
 
 .why {
+  overflow: hidden;
   margin-bottom: 12rem;
 }
 @media (max-width: 992px) {
@@ -3351,7 +3358,7 @@ a:hover {
 }
 .reviews__header {
   display: flex;
-  justify-content: space-between;
+  gap: 6rem;
   background-color: rgba(255, 255, 255, 0.5);
   box-sizing: border-box;
   padding: 2.6rem 4rem;
@@ -3429,7 +3436,7 @@ a:hover {
 .reviews__header__sources {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 8.5rem;
 }
 @media (max-width: 992px) {
   .reviews__header__sources {
@@ -4249,6 +4256,14 @@ a:hover {
   .about__content h2, .about__content h2 span {
     font-size: 2.5rem;
     line-height: 2.5rem;
+  }
+}
+.about__content h3:nth-of-type(2) {
+  margin-top: 4.5rem;
+}
+@media (max-width: 992px) {
+  .about__content h3:nth-of-type(2) {
+    margin-top: 0;
   }
 }
 .about__content h3, .about__content h3 span {

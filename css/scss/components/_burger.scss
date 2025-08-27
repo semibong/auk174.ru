@@ -5,7 +5,7 @@
     justify-content: space-between;
     gap: 6rem;
     width: 100%;
-    height: calc(100vh - 6.5rem);
+    height: calc(100dvh - 6.5rem);
     background: url(../images/burger-bg.jpg) no-repeat center / cover;
     box-sizing: border-box;
     padding: 6rem 2.5rem 2.5rem;
@@ -72,7 +72,14 @@
         overflow-y: scroll;
 
         &::-webkit-scrollbar {
-            display: none;
+            width: 0.3rem;
+            background-color: rgba(#fff, 0.5);
+            border-radius: 1rem;
+
+            &-thumb {
+                background-color: $color-active;
+                border-radius: 1rem;
+            }
         }
     }
 

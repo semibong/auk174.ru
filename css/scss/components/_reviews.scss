@@ -7,7 +7,7 @@
 
     &__header {
         display: flex;
-        justify-content: space-between;
+        gap: 6rem;
         background-color: rgba(#fff, 0.5);
         box-sizing: border-box;
         padding: 2.6rem 4rem;
@@ -91,7 +91,7 @@
         &__sources {
             display: flex;
             align-items: center;
-            gap: 0.8rem;
+            gap: 8.5rem;
 
             @media #{$lg} {
                 gap: 0.5rem;
