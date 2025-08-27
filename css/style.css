@@ -1313,7 +1313,7 @@ a:hover {
   border-radius: 1rem;
 }
 .burger__content::-webkit-scrollbar-thumb {
-  background-color: #C31E2A;
+  background: #C31E2A;
   border-radius: 1rem;
 }
 .burger__menu ul {
