@@ -1276,6 +1276,26 @@ a:hover {
   opacity: 1;
   pointer-events: all;
 }
+.burger .bvi-open {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.5rem;
+  height: 4.3rem;
+  background: linear-gradient(0deg, #141822, #1D2835) left padding-box, linear-gradient(90deg, #181F2A 0%, #fff, 34%, #fff 68%, #181F2A 100%) border-box;
+  padding-left: 1.4rem;
+  border: 1px transparent solid;
+  border-radius: 0 1rem 1rem 0;
+  top: 0.5rem;
+  left: 0;
+}
+.burger .bvi-open img {
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: contain;
+  object-position: center;
+}
 .burger__close {
   position: fixed;
   display: none;
